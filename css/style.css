@@ -1,0 +1,1750 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "sansBold";
+  src: url(/fontFamily/DM_Sans/DMSans-Bold.ttf) format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "sansItalic";
+  src: url(/fontFamily/DM_Sans/DMSans-Medium.ttf) format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "sansBoldItalic";
+  src: url(/fontFamily/DM_Sans/DMSans-BoldItalic.ttf) format("ttf");
+  font-display: swap;
+}
+/*BODY*/
+body {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.4;
+}
+
+body::before {
+  clip-path: circle(30% at left 20%);
+  background: linear-gradient(135deg, #B69121 100%, #B69121 100%);
+}
+
+body::after {
+  clip-path: circle(18% at right 70%);
+  background: linear-gradient(135deg, #B69121 10%, #B69121 100%);
+}
+
+/*HEADER*/
+header {
+  height: 90vh;
+  width: 98%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  margin: 25px 0 0 12px;
+  border-radius: 25px;
+  box-shadow: 0 20 px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+header .navbar {
+  width: 100%;
+  display: flex;
+  padding: 35px 50px;
+  justify-content: space-between;
+}
+header .navbar .menu {
+  display: flex;
+}
+header .navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+header .navbar .menu li .link-wrapper {
+  position: relative;
+  left: 700px;
+  top: 250px;
+  display: block;
+  padding: 8px 0;
+}
+header .navbar .menu li a {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+header .navbar .menu li a:hover {
+  color: #ffffff;
+  font-weight: 200;
+}
+header .navbar .menu li .link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #fff;
+}
+header .navbar .menu li .hover-2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  background-color: #B69121;
+  transition: transform 0.3s;
+}
+header .navbar .menu li .hover-2:hover:after {
+  transform: scaleX(1);
+}
+header .navbar .btn {
+  width: 316px;
+  padding: 5px 100px 5px 6px;
+  border: 1px;
+  margin: 0px 100px 0px 8px;
+}
+header .navbar .btn button {
+  color: #f2f2f2;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  font-size: 17px;
+  padding: 3px 12px;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .navbar .btn button:hover {
+  color: wheat;
+  border: 1px solid wheat;
+  box-shadow: 8px 5px 10px grey;
+  font-weight: lighter;
+  transform: scale(0.97);
+}
+
+/*Main*/
+main {
+  /*Trabajos*/
+  /*Contacto*/
+}
+main #presentacion {
+  height: 740px;
+}
+main #presentacion .row {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+main #presentacion .card {
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  padding: 2rem 1rem 4.5rem 1rem;
+  margin-right: 0px;
+  top: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+main #presentacion .card::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background-color: skyblue;
+  top: 0px;
+  right: 0px;
+  border-bottom: 20px solid #01a4c0;
+  border-left: 20px solid #01a4c0;
+  border-right: 20px solid #00edfe32;
+  border-top: 20px solid #00edfe32;
+  position: absolute;
+  filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+main #presentacion .card::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid #ba27bb;
+  border-right: 40px solid #ba27bb;
+  border-left: 40px solid #d02bd040;
+  border-bottom: 40px solid #d02bd040;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.5));
+  margin-right: 10%;
+}
+main #presentacion .card:nth-of-type(1) {
+  margin-right: 9%;
+}
+main #presentacion .card .line {
+  position: relative;
+  top: 0px;
+  color: #DE9D37;
+  width: 16em;
+  margin: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 38px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+main #presentacion .card .anim-typewriter {
+  animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6.5em;
+  }
+}
+@keyframes blinkTextCursor {
+  to {
+    border-right-color: rgba(0, 0, 0, 0.353);
+  }
+  from {
+    border-right-color: transparent;
+  }
+}
+main #presentacion .card .text {
+  color: beige;
+  text-indent: 1em;
+  line-height: 190%;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+main #porfolio {
+  height: 700px;
+  margin-bottom: 200px;
+}
+main #porfolio .title2 {
+  color: #DE9D37;
+  align-items: center;
+  font-size: 40px;
+  font-family: "sansBold";
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+main #porfolio .content-all {
+  width: 100px;
+  perspective: 4000px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 280px;
+  padding-top: 100px;
+  margin-bottom: 750px;
+  right: 10px;
+}
+main #porfolio .content-all .content-carrousel {
+  width: 100%;
+  position: absolute;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+}
+main #porfolio .content-all .content-carrousel:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+main #porfolio .content-all .content-carrousel figure {
+  height: 320px;
+  width: 250px;
+  overflow: hidden;
+  position: absolute;
+}
+main #porfolio .content-all .content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure:nth-child(2) {
+  transform: rotateY(72deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure:nth-child(3) {
+  transform: rotateY(144deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure:nth-child(4) {
+  transform: rotateY(216deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+  transform: rotateY(288deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure .content-carrousel img {
+  width: 100%;
+}
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+main #porfolio .accordion {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  top: 150px;
+  left: 700px;
+  right: 0px;
+}
+main #porfolio .accordion .accordion-body {
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+main #porfolio .accordion .accordion-item {
+  background-color: transparent;
+  padding: 8px 0px;
+}
+main #porfolio .accordion .accordion-collapse {
+  background-color: transparent;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 13px;
+}
+main #porfolio .accordion code {
+  font-weight: 500;
+  color: #B69121;
+}
+main #porfolio .accordion .accordion-button {
+  background-color: #000000b1;
+  border-radius: 10px;
+  color: #DE9D37;
+  font-size: 15px;
+}
+main #porfolio .accordion .collapsed {
+  color: #01bad9;
+  background-color: #161623;
+  border-radius: 10px;
+  font-size: 15px;
+}
+main #contacto {
+  margin-bottom: 20px;
+}
+main #contacto .content {
+  width: 1250px;
+  margin: 0 50px;
+  padding: 0 40px;
+}
+main #contacto .content .contact-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  height: 400px;
+  width: 1250px;
+  margin-bottom: 10px;
+}
+main #contacto .content .contact-wrapper .contact-form {
+  background: #222222;
+  margin: 5px 0 11px 10px;
+  padding: 12px;
+  height: 370px;
+  width: 620px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main #contacto .content .contact-wrapper .contact-form .text-center-title {
+  height: 34px;
+  color: #f2f2f2;
+  font-size: 2.5em;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario {
+  height: 300px;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario label {
+  color: #fff;
+  padding-top: 8px;
+  font-size: 12px;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #DE9D37;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario .name {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #DE9D37;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario .mail {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #DE9D37;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar {
+  grid-column: 1;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0 10px 0;
+  padding: 5px;
+  background: #B69121;
+  color: #000;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-size: 16px;
+}
+main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:hover, main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:focus {
+  background: #B69121;
+  color: #fff;
+  transition: background-color 1s ease-in-out;
+  outline: 0;
+}
+main #contacto .content .contact-wrapper .contact-info {
+  background: #000;
+  width: 410px;
+  margin: 35px 65px 35px 25px;
+  padding: 15px;
+}
+main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #474c51;
+}
+main #contacto .content .contact-wrapper .contact-info h4 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 12px;
+}
+main #contacto .content .contact-wrapper .contact-info ul {
+  padding: 0.25rem;
+  list-style: none;
+}
+main #contacto .content .contact-wrapper .contact-info li {
+  color: #474c51;
+  padding: 20px;
+  font-size: 1.2em;
+}
+main #contacto .content .contact-wrapper .contact-info img {
+  width: 30px;
+  height: 30px;
+  font-size: 1.7em;
+  padding: 0 2% 2% 0;
+}
+main #contacto .content .contact-wrapper .contact-info i {
+  font-size: 1.5em;
+  padding: 2%;
+}
+
+/*Footer*/
+#footer {
+  margin-top: 50px;
+  height: 200px;
+}
+#footer .menu-pie {
+  background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+  /* height: 40vh; */
+}
+#footer .menu-pie .row {
+  padding-bottom: 35px;
+}
+#footer .menu-pie .row .pie ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 150px;
+  list-style: none;
+  text-decoration: none;
+}
+#footer .menu-pie .row .pie li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+#footer .menu-pie .row .pie li a i {
+  color: #b6912199;
+  padding-right: 8px;
+}
+#footer .menu-pie .row #social {
+  flex: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 130px;
+}
+#footer .menu-pie .row #social a {
+  padding: 1rem;
+}
+#footer .menu-pie .row #social a .icono {
+  color: #b6912199;
+  border-radius: 1rem;
+  font-size: 5rem;
+}
+#footer .menu-pie .copy {
+  background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+  color: #6C757D;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/*@media*/
+@media only screen and (min-width: 768px) and (max-width: 940px) {
+  header {
+    height: 90vh;
+    width: 97%;
+  }
+  header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .navbar .menu {
+    margin: 10px 0 20px 0;
+  }
+  header .navbar .btn {
+    width: 316px;
+    padding: 5px 160px 5px 6px;
+    border: 1px;
+    margin: 0px 100px 0px 8px;
+  }
+
+  main {
+    width: 100%;
+    /*Trabajos*/
+    /*Contacto*/
+  }
+  main #presentacion {
+    height: 740px;
+  }
+  main #presentacion .row {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+  main #presentacion .card {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 1rem 4.5rem 1rem;
+    margin-right: 0px;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(5px);
+    position: relative;
+  }
+  main #presentacion .card::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid #01a4c0;
+    border-left: 20px solid #01a4c0;
+    border-right: 20px solid #00edfe32;
+    border-top: 20px solid #00edfe32;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  main #presentacion .card::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #ba27bb;
+    border-right: 40px solid #ba27bb;
+    border-left: 40px solid #d02bd040;
+    border-bottom: 40px solid #d02bd040;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  main #presentacion .card:nth-of-type(1) {
+    margin-right: 9%;
+  }
+  main #presentacion .card .line {
+    position: relative;
+    top: 0px;
+    color: #DE9D37;
+    width: 16em;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  main #presentacion .card .anim-typewriter {
+    animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 6.5em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    to {
+      border-right-color: rgba(0, 0, 0, 0.265);
+    }
+    from {
+      border-right-color: transparent;
+    }
+  }
+  main #presentacion .card .text {
+    color: beige;
+    text-indent: 1rem;
+    line-height: 190%;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  main #porfolio {
+    height: 900px;
+  }
+  main #porfolio .title2 {
+    color: #DE9D37;
+    align-items: center;
+    font-size: 40px;
+    font-family: "sansBold";
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  main #porfolio .content-all {
+    width: 170px;
+    left: 0px;
+    right: 0px;
+    margin: 0 0 750px 100px;
+    perspective: 5000px;
+    position: relative;
+    padding: 100px 0 0 150px;
+  }
+  main #porfolio .content-all .content-carrousel {
+    width: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+  }
+  main #porfolio .content-all .content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  main #porfolio .content-all .content-carrousel figure {
+    height: 320px;
+    width: 250px;
+    overflow: hidden;
+    position: absolute;
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure .content-carrousel img {
+    width: 100%;
+  }
+  @keyframes rotar {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  main #porfolio .accordion {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    top: 550px;
+    left: -120px;
+    bottom: 150px;
+    right: 0px;
+    padding: 0px;
+    margin: 0 0 0 12px;
+  }
+  main #porfolio .accordion .accordion-body {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  main #porfolio .accordion .accordion-item {
+    background-color: transparent;
+    padding-bottom: 5px;
+  }
+  main #porfolio .accordion .accordion-collapse {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 10px;
+  }
+  main #porfolio .accordion code {
+    font-weight: 500;
+    color: #B69121;
+  }
+  main #porfolio .accordion .accordion-button {
+    background-color: #000000b1;
+    border-radius: 10px;
+    color: #DE9D37;
+  }
+  main #porfolio .accordion .collapsed {
+    color: #01bad9;
+    background-color: #161623;
+    border-radius: 10px;
+  }
+  main #contacto {
+    margin-bottom: 20px;
+    width: 740px;
+  }
+  main #contacto .content {
+    width: 740px;
+    margin: 0px;
+    padding: 0px;
+  }
+  main #contacto .content .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    height: 420px;
+    width: 740px;
+    margin: 0 0 10px 0;
+  }
+  main #contacto .content .contact-wrapper .contact-form {
+    background: #222222;
+    margin: 5px 0 11px 10px;
+    padding: 12px;
+    height: 370px;
+    width: 324px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main #contacto .content .contact-wrapper .contact-form .text-center-title {
+    height: 34px;
+    color: #f2f2f2;
+    font-size: 2.5em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario {
+    height: 300px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario label {
+    color: #fff;
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario textarea {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .name {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .mail {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar {
+    grid-column: 1;
+    height: 50px;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    padding: 5px;
+    background: #B69121;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-size: 16px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:hover, main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:focus {
+    background: #B69121;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info {
+    background: #000;
+    width: 350px;
+    margin: 30x 0 10px 0;
+    padding: 10px 0 0 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: #474c51;
+  }
+  main #contacto .content .contact-wrapper .contact-info h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 12px;
+  }
+  main #contacto .content .contact-wrapper .contact-info ul {
+    padding: 0;
+    width: 350px;
+    list-style: none;
+  }
+  main #contacto .content .contact-wrapper .contact-info li {
+    color: #474c51;
+    padding: 20px;
+    font-size: 1.2em;
+  }
+  main #contacto .content .contact-wrapper .contact-info img {
+    width: 30px;
+    height: 30px;
+    font-size: 1.7em;
+    padding: 0 2% 2% 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info i {
+    font-size: 1.5em;
+    padding: 2%;
+  }
+
+  #footer {
+    margin-top: 50px;
+  }
+  #footer .menu-pie {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    height: 40vh;
+  }
+  #footer .menu-pie .pie ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 150px;
+    list-style: none;
+    text-decoration: none;
+  }
+  #footer .menu-pie .pie li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer .menu-pie .pie li a i {
+    color: #b6912199;
+    padding-right: 8px;
+  }
+  #footer .menu-pie #social {
+    flex: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 130px;
+  }
+  #footer .menu-pie #social a {
+    padding: 1rem;
+  }
+  #footer .menu-pie #social a .icono {
+    color: #b6912199;
+    border-radius: 1rem;
+    font-size: 5rem;
+  }
+  #footer .copy {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    color: #6C757D;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  header {
+    height: 90vh;
+    width: 93%;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header .navbar .menu {
+    margin: 10px 0 20px 0;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+  header .navbar .btn {
+    width: 316px;
+    padding: 5px 6px;
+    border: 1px;
+    margin: 0px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  main {
+    width: 100%;
+    /*Trabajos*/
+    /*Contacto*/
+  }
+  main #presentacion {
+    height: 740px;
+  }
+  main #presentacion .row {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+  main #presentacion .card {
+    display: inline-block;
+    width: 100%;
+    height: 550px;
+    padding: 2rem 1rem 4.5rem 1rem;
+    margin-right: 0px;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(5px);
+    position: relative;
+  }
+  main #presentacion .card::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid #01a4c0;
+    border-left: 20px solid #01a4c0;
+    border-right: 20px solid #00edfe32;
+    border-top: 20px solid #00edfe32;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  main #presentacion .card::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #ba27bb;
+    border-right: 40px solid #ba27bb;
+    border-left: 40px solid #d02bd040;
+    border-bottom: 40px solid #d02bd040;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  main #presentacion .card:nth-of-type(1) {
+    margin-right: 9%;
+  }
+  main #presentacion .card .line {
+    position: relative;
+    top: 0px;
+    color: #DE9D37;
+    width: 16em;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  main #presentacion .card .anim-typewriter {
+    animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 6.5em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    to {
+      border-right-color: rgba(0, 0, 0, 0.265);
+    }
+    from {
+      border-right-color: transparent;
+    }
+  }
+  main #presentacion .card .text {
+    color: beige;
+    text-indent: 1rem;
+    line-height: 190%;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  main #porfolio {
+    height: 850%;
+  }
+  main #porfolio .title2 {
+    color: #DE9D37;
+    align-items: center;
+    font-size: 40px;
+    font-family: "sansBold";
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  main #porfolio .content-all {
+    width: 100px;
+    margin: auto;
+    perspective: 5000px;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-top: 100px;
+    margin-bottom: 750px;
+    right: 0px;
+  }
+  main #porfolio .content-all .content-carrousel {
+    width: 100%;
+    position: relative;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+  }
+  main #porfolio .content-all .content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  main #porfolio .content-all .content-carrousel figure {
+    height: 320px;
+    width: 250px;
+    overflow: hidden;
+    position: absolute;
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure .content-carrousel img {
+    width: 100%;
+  }
+  @keyframes rotar {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  main #porfolio .accordion {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    top: -100px;
+    left: 0px;
+    bottom: 150px;
+    right: 0px;
+    padding: 0px;
+    margin: 0 0 0 12px;
+  }
+  main #porfolio .accordion .accordion-body {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  main #porfolio .accordion .accordion-item {
+    background-color: transparent;
+    padding: 8px 0px;
+  }
+  main #porfolio .accordion .accordion-collapse {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  main #porfolio .accordion code {
+    font-weight: 500;
+    color: #B69121;
+  }
+  main #porfolio .accordion .accordion-button {
+    background-color: #000000b1;
+    border-radius: 10px;
+    color: #DE9D37;
+    font-size: 15px;
+  }
+  main #porfolio .accordion .collapsed {
+    color: #01bad9;
+    background-color: #161623;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  main #contacto {
+    padding: 0px;
+    width: 370px;
+    margin-right: 0px;
+  }
+  main #contacto .content {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 370px;
+  }
+  main #contacto .content .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    padding-right: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    width: 380px;
+    height: 540px;
+  }
+  main #contacto .content .contact-wrapper .contact-form {
+    background: #222222;
+    margin: 0;
+    padding: 0.5em;
+    width: 360px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main #contacto .content .contact-wrapper .contact-form .text-center-title {
+    height: 34px;
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario label {
+    color: #fff;
+    padding-top: 2px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario textarea {
+    padding: 0px;
+    height: 100px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .name {
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .mail {
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar {
+    grid-column: 1;
+    height: 46px;
+    margin-top: 10px;
+    background: #B69121;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:hover, main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:focus {
+    background: #B69121;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info {
+    background: #000;
+    width: 350px;
+    margin: 5px 0px 75px 0px;
+    padding: 0px;
+  }
+  main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info ul {
+    padding: 0.5em;
+    list-style: none;
+  }
+  main #contacto .content .contact-wrapper .contact-info li {
+    padding: 0.25em;
+  }
+  main #contacto .content .contact-wrapper .contact-info i {
+    padding: 2%;
+  }
+
+  #footer {
+    margin-top: 50px;
+    height: 350px;
+    width: 418px;
+  }
+  #footer .menu-pie {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    height: 380px;
+    padding: 0px;
+    width: 380px;
+  }
+  #footer .menu-pie .row {
+    margin: 0px;
+    width: 380px;
+    height: 330px;
+    padding-bottom: 0px;
+  }
+  #footer .menu-pie .row .pie {
+    width: 380px;
+    padding: 0px;
+  }
+  #footer .menu-pie .row .pie ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: 1 1 auto;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0px;
+  }
+  #footer .menu-pie .row .pie li {
+    padding-bottom: 10px;
+  }
+  #footer .menu-pie .row .pie li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer .menu-pie .row .pie li a i {
+    color: #b6912199;
+    padding-right: 8px;
+  }
+  #footer .menu-pie .row #social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: 1 1 auto;
+    margin-top: 0;
+    padding: 40px 15px 0 15px;
+  }
+  #footer .menu-pie .row #social a {
+    padding: 1rem;
+  }
+  #footer .menu-pie .row #social a .icono {
+    color: #b6912199;
+    border-radius: 1rem;
+    font-size: 5rem;
+  }
+  #footer .copy {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    color: #6C757D;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 399px) {
+  header {
+    height: 90vh;
+    width: 93%;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header .navbar .menu {
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+  header .navbar .btn {
+    width: 316px;
+    padding: 5px 0px 5px 6px;
+    border: 1px;
+    margin: 0px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  main {
+    width: 100%;
+    /*Trabajos*/
+    /*Contacto*/
+  }
+  main #presentacion {
+    height: 740px;
+  }
+  main #presentacion .row {
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+  main #presentacion .card {
+    display: inline-block;
+    width: 100%;
+    height: 467px;
+    padding: 2rem 1rem 4.5rem 1rem;
+    margin-right: 0px;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(5px);
+    position: relative;
+  }
+  main #presentacion .card::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid #01a4c0;
+    border-left: 20px solid #01a4c0;
+    border-right: 20px solid #00edfe32;
+    border-top: 20px solid #00edfe32;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  main #presentacion .card::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #ba27bb;
+    border-right: 40px solid #ba27bb;
+    border-left: 40px solid #d02bd040;
+    border-bottom: 40px solid #d02bd040;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  main #presentacion .card:nth-of-type(1) {
+    margin-right: 9%;
+  }
+  main #presentacion .card .line {
+    position: relative;
+    top: 0px;
+    color: #DE9D37;
+    width: 16em;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  main #presentacion .card .anim-typewriter {
+    animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 6.2em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    to {
+      border-right-color: rgba(0, 0, 0, 0.265);
+    }
+    from {
+      border-right-color: transparent;
+    }
+  }
+  main #presentacion .card .text {
+    color: beige;
+    text-indent: 1rem;
+    line-height: 200%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  main #porfolio {
+    height: 900px;
+  }
+  main #porfolio .content-all {
+    width: 100px;
+    perspective: 5000px;
+    position: relative;
+    margin: 0 0 750px 0;
+    padding: 100px 0 0 0;
+    right: 0px;
+  }
+  main #porfolio .content-all .title2 {
+    color: #DE9D37;
+    align-items: center;
+    font-size: 40px;
+    font-family: "sansBold";
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  main #porfolio .content-all .content-carrousel {
+    width: 100%;
+    position: relative;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+  }
+  main #porfolio .content-all .content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  main #porfolio .content-all .content-carrousel figure {
+    height: 310px;
+    width: 250px;
+    overflow: hidden;
+    position: absolute;
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure .content-carrousel img {
+    width: 100%;
+  }
+  @keyframes rotar {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  main #porfolio .accordion {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: 550px;
+    left: -30px;
+    right: -500px;
+  }
+  main #porfolio .accordion .accordion-body {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  main #porfolio .accordion .accordion-item {
+    background-color: transparent;
+    padding-bottom: 5px;
+  }
+  main #porfolio .accordion .accordion-collapse {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 10px;
+  }
+  main #porfolio .accordion code {
+    font-weight: 500;
+    color: #B69121;
+  }
+  main #porfolio .accordion .accordion-button {
+    background-color: #000000b1;
+    border-radius: 10px;
+    color: #DE9D37;
+  }
+  main #porfolio .accordion .collapsed {
+    color: #01bad9;
+    background-color: #161623;
+    border-radius: 10px;
+  }
+  main #contacto .content {
+    width: 330px;
+    margin: 0px;
+    padding: 0px;
+  }
+  main #contacto .content .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    margin-bottom: 10px;
+    width: 330px;
+    height: 620px;
+  }
+  main #contacto .content .contact-wrapper .contact-form {
+    background: #222222;
+    margin: 0;
+    padding: 0.5em;
+    width: 310px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main #contacto .content .contact-wrapper .contact-form .text-center-title {
+    height: 34px;
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario {
+    height: 300px;
+    width: 300px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario label {
+    color: #fff;
+    padding-top: 2px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario textarea {
+    padding: 0px;
+    height: 100px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .name {
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .mail {
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar {
+    grid-column: 1;
+    height: 41px;
+    margin-top: 15px;
+    background: #B69121;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:hover, main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:focus {
+    background: #B69121;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info {
+    background: #000;
+    margin: 0 0 45px 0;
+    padding: 0 0 0 20px;
+    height: 130px;
+    width: 290px;
+  }
+  main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info ul {
+    padding: 0.5em;
+    list-style: none;
+  }
+  main #contacto .content .contact-wrapper .contact-info li {
+    padding: 0.25em;
+  }
+  main #contacto .content .contact-wrapper .contact-info i {
+    padding: 2%;
+  }
+
+  #footer {
+    margin-top: 50px;
+    height: 350px;
+    width: 355px;
+  }
+  #footer .menu-pie {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    height: 380px;
+    padding: 0px;
+    width: 380px;
+  }
+  #footer .menu-pie .row {
+    margin: 0px;
+    width: 380px;
+    height: 330px;
+    padding-bottom: 0px;
+  }
+  #footer .menu-pie .row .pie {
+    width: 340px;
+    padding: 0px;
+  }
+  #footer .menu-pie .row .pie ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: 1 1 auto;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0px;
+  }
+  #footer .menu-pie .row .pie li {
+    padding-bottom: 10px;
+  }
+  #footer .menu-pie .row .pie li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer .menu-pie .row .pie li a i {
+    color: #b6912199;
+    padding-right: 8px;
+  }
+  #footer .menu-pie .row #social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: 1 1 auto;
+    margin-top: 0;
+    width: 320px;
+    padding: 40px 35px 0 0;
+  }
+  #footer .menu-pie .row #social a {
+    padding: 1rem;
+  }
+  #footer .menu-pie .row #social a .icono {
+    color: #b6912199;
+    border-radius: 1rem;
+    font-size: 5rem;
+  }
+  #footer .copy {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    color: #6C757D;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

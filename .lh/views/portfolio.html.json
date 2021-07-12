@@ -1,0 +1,18 @@
+{
+    "sourceFile": "views/portfolio.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1625533948555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1625533948555,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=5.0\">\r\n    <!-- Metaetiquetas Generales -->\r\n        <meta name=\"description\" content=\"Esta pagina es un muestrario de mis trabajos. Desarrollo paginas web, onepage, tiendas, creo diseños para tu proyecto, plantillas web\">\r\n        <meta name=\"keywords\" content=\"Desarrollo web, portfolio, muetras, onepage, page, desarrolladora, pagina web, negocio, usuario, cliente\">\r\n    <!-- Protocolo open graph -->    \r\n        <meta property=\"og:title\" content=\"Soy desarrolladora web\">\r\n        <meta property=\"og:author\" content=\"Caro Noriega\">\r\n        <meta property=\"og:description\" content=\"Desarrollo web, portfolio, muestras, onepage, page, desarrolladora, pagina web, negocio\">\r\n    <!-- Fonts Family -->    \r\n        <link href=\"https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap\" rel=\"stylesheet\">\r\n    <!--Animate-->\r\n        <link rel=\"stylesheet\"href=\"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css\"/>\r\n    <!-- FontAwesome -->\r\n        <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.3/css/all.css\" integrity=\"sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk\" crossorigin=\"anonymous\">\r\n    <!-- Bootstrap --> \r\n        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">  \r\n    <!--SCSS-->    \r\n        <link rel=\"stylesheet\" href=\"./scss/style.scss\">\r\n    <!--CSS-->    \r\n        <link rel=\"stylesheet\" href=\"./css/style.css\">\r\n    <!--Title-->    \r\n        <title>-CN-</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    <!-- Separate Popper and Booststrap JS-->\r\n    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\" integrity=\"sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p\" crossorigin=\"anonymous\"></script>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js\" integrity=\"sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT\" crossorigin=\"anonymous\"></script>\r\n</body>\r\n</html>"
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+{
+    "sourceFile": "form/enviar.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 48,
+            "patches": [
+                {
+                    "date": 1625670184123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1625670192873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-<\n\\ No newline at end of file\n+<?php\r\n+>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670199319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <?php\r\n->\n\\ No newline at end of file\n+?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670223390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,10 @@\n <?php\r\n+$\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670231193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\r\n-$\r\n+$nombre = $ POST\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670237375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\r\n-$nombre = $ POST\r\n+$nombre = $ POST[\"\"]\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670243245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\r\n-$nombre = $ POST[\"\"]\r\n+$nombre = $ POST['nombre']\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670248828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <?php\r\n-$nombre = $ POST['nombre']\r\n+$nombre = $ POST['nombre'];\r\n+$\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670256423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\r\n $nombre = $ POST['nombre'];\r\n-$\r\n+$mail = $POST\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670262486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <?php\r\n $nombre = $ POST['nombre'];\r\n-$mail = $POST\r\n+$mail = $POST['email']\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670269655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <?php\r\n $nombre = $ POST['nombre'];\r\n-$mail = $POST['email']\r\n+$mail = $POST['email'];\r\n+$mensaje\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670276380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\r\n $nombre = $ POST['nombre'];\r\n $mail = $POST['email'];\r\n-$mensaje\r\n+$mensaje = $POST\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670281737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+<?php\r\n+$nombre = $_POST['nombre'];\r\n+$mail = $POST['email'];\r\n+$mensaje = $POST\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670288159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,12 @@\n <?php\r\n $nombre = $_POST['nombre'];\r\n-$mail = $POST['email'];\r\n-$mensaje = $POST\r\n+$mail = $_POST['email'];\r\n+$mensaje = $_POST[]\r\n \r\n \r\n \r\n \r\n \r\n \r\n \r\n-?>\n-<?php\r\n-$nombre = $ POST['nombre'];\r\n-$mail = $POST['email'];\r\n-$mensaje = $POST\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670294211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\r\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n-$mensaje = $_POST[]\r\n+$mensaje = $_POST['']\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670400958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n <?php\r\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n-$mensaje = $_POST['']\r\n+$mensaje = $_POST['mensaje'];\r\n \r\n+$\r\n \r\n \r\n \r\n \r\n \r\n-\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670407111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$\r\n+$header = ''\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670413543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = ''\r\n+$header = 'From: '\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670421971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: '\r\n+$header = 'From: ' . \r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670428502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . \r\n+$header = 'From: ' . $mail . \r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670444257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \r\n+$header = 'From: ' . $mail . \"\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670453107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"\"\r\n+$header = 'From: ' . $mail . \"/\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670459665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"/\"\r\n+$header = 'From: ' . $mail . \"\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670467356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"\"\r\n+$header = 'From: ' . $mail . \"^*¨Ç_::;\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670473347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"^*¨Ç_::;\"\r\n+// $header = 'From: ' . $mail . \"^*¨Ç_::;\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670484578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-// $header = 'From: ' . $mail . \"^*¨Ç_::;\"\r\n+$header = 'From: ' . $mail . \"^*¨Ç_::;ª!\"\"··$$%%%%%%&&&//(\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670503838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"^*¨Ç_::;ª!\"\"··$$%%%%%%&&&//(\"\r\n+$header = 'From: ' . $mail . \"\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670514176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"\"\r\n+$header = 'From: ' . $mail . \"//\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670520119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"//\"\r\n+// $header = 'From: ' . $mail . \"//\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670525466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-// $header = 'From: ' . $mail . \"//\"\r\n+$header = 'From: ' . $mail . \"\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670548102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"\"\r\n+$header = 'From: ' . $mail . \"\\\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670554551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \"\\\"\r\n+$header = 'From: ' . $mail . \" \\r]\"\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670561467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \" \\r]\"\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670588465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670614547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,14 @@\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n \r\n+\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670620529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,12 +6,12 @@\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n \r\n \r\n+\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670647711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,11 @@\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670653785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,8 @@\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670897261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,18 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n+\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n \r\n \r\n-\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625670902369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,11 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625670949100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,9 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header = 'From: ' . $mail . \" \\r\\n\";\r\n+A'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625671196302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n $nombre = $_POST['nombre'];\r\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n-A'From: ' . $mail . \" \\r\\n\";\r\n+$header = 'From: ' . $mail . \" \\r\\n\";\r\n+$header D 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625671243514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header D 'From: ' . $mail . \" \\r\\n\";\r\n+$header .= 'From: ' . $mail . \" \\r\\n\";\r\n+$header .= 'From: ' . $mail . \" \\r\\n\";\r\n+$header .= 'From: ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625671255111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header .= 'From: ' . $mail . \" \\r\\n\";\r\n-$header .= 'From: ' . $mail . \" \\r\\n\";\r\n-$header .= 'From: ' . $mail . \" \\r\\n\";\r\n+$header .= ' ' . $mail . \" \\r\\n\";\r\n+$header .= ' ' . $mail . \" \\r\\n\";\r\n+$header .= ' ' . $mail . \" \\r\\n\";\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625671268878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n $mail = $_POST['email'];\r\n $mensaje = $_POST['mensaje'];\r\n \r\n $header = 'From: ' . $mail . \" \\r\\n\";\r\n-$header .= ' ' . $mail . \" \\r\\n\";\r\n-$header .= ' ' . $mail . \" \\r\\n\";\r\n-$header .= ' ' . $mail . \" \\r\\n\";\r\n+$header .= ' ' ;\r\n+$header .= ' ' ;\r\n+$header .= ' ' ;\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625671280700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,7 @@\n \r\n \r\n \r\n \r\n+\r\n+\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625671286084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n $header .= ' ' ;\r\n $header .= ' ' ;\r\n $header .= ' ' ;\r\n \r\n+$\r\n \r\n \r\n \r\n \r\n \r\n \r\n-\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1625671293828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n $header .= ' ' ;\r\n $header .= ' ' ;\r\n $header .= ' ' ;\r\n \r\n-$mensjae\r\n+$mensaje\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1625673153934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n $header .= \"Mime-Version: 1.0 \\r\\n\";\r\n $header .= \"Content-Type: text/plain\";\r\n \r\n $mensaje = \"Este mensaje fue enviado por\" . $nombre . \",\\r\\n\";\r\n-$mensaje .= \"Su e-mail es:\" . $mail . \"\\r\";\r\n+$mensaje .= \"Su e-mail es:\" . $mail . \"\\r\\\";\r\n $mensaje .= \"\";\r\n $mensaje .= \"\";\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1625670184123,
+            "name": "Commit-0",
+            "content": "<"
+        }
+    ]
+}

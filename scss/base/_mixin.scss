@@ -1,0 +1,17 @@
+@mixin flex-footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@mixin fonts {
+    font-size: 10rem;
+    font-weight: bolder;
+}
+
+@mixin transf ($propiedad){
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+
