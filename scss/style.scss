@@ -1433,34 +1433,33 @@ main{
 
                                         label{
                                             color: #fff;
-                                            padding-left: 2px;
+                                            padding: 2px;
                                             margin-top: 5px;
                                             width: 190px;
-                                        }
 
-                                        textarea{
-                                            padding: 2px 0 2px 0;
-                                            margin-bottom: 15px ;
-                                            height: 98px;
-                                        }   
+                                            .name{
+                                                height: 33px;
+                                                padding: 2px;
+                                                background: none;
+                                                outline: 0;
+                                                color: #fff;
+                                                border-bottom: 1px solid #DE9D37;    
+                                            }
 
-                                        .name{
-                                            height: 33px;
-                                           /*  padding: 1px; */
-                                            background: none;
-                                            outline: 0;
-                                            color: #fff;
-                                            border-bottom: 1px solid #DE9D37;    
-                                        }
+                                            .mail{
+                                                height: 27px;
+                                                padding: 2px;
+                                                background: none;
+                                                outline: 0;
+                                                color: #fff;
+                                                border-bottom: 1px solid #DE9D37;
+                                            }
 
-                                        .mail{
-                                            /* width: 167px; */
-                                            height: 27px;
-                                            padding: 1px;
-                                            background: none;
-                                            outline: 0;
-                                            color: #fff;
-                                            border-bottom: 1px solid #DE9D37;
+                                            textarea{
+                                                margin-bottom: 15px ;
+                                                height: 98px;
+                                                padding: 2px;
+                                            } 
                                         }
 
                                         .boton-enviar{
