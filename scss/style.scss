@@ -178,7 +178,7 @@ header{
 /*Main*/
 main{
     
-    #presentacion{
+        #presentacion{
             height: 740px;
 
             .row{
@@ -279,7 +279,7 @@ main{
                         font-weight: 500;
                     }
             }
-    }
+        }
 
 /*Trabajos*/
 
@@ -1431,49 +1431,45 @@ main{
                                 
                                     .formulario{
 
-                                        .name, .mail, .textarea{
-                                            border: none;
+                                        label{
                                             color: #fff;
-                                            background: none;
-                                            outline: 0;
-                                            padding: 2px;
-                                            border-bottom: 1px solid #DE9D37;   
+                                            padding-top: 2px;
                                         }
 
-                                            /*  .name{
-                                                height: 33px;
-                                                padding: 2px;
-                                                background: none;
-                                                outline: 0;
-                                                color: #fff;
-                                                border-bottom: 1px solid #DE9D37;    
-                                            }
+                                        textarea{
+                                            padding:0px;
+                                            height: 100px;
+                                        }   
 
-                                            .mail{
-                                                height: 27px;
-                                                padding: 2px;
-                                                background: none;
-                                                outline: 0;
-                                                color: #fff;
-                                                border-bottom: 1px solid #DE9D37;
-                                            }
+                                        .name{
+                                            width: 100%;
+                                            padding: 1px;
+                                            border: none;
+                                            background: none;
+                                            outline: 0;
+                                            color: #fff;
+                                            border-bottom: 1px solid #DE9D37;    
+                                        }
 
-                                            .textarea{
-                                                margin-bottom: 15px ;
-                                                height: 50px;
-                                                padding: 2px;
-                                            }  */
+                                        .mail{
+                                            width: 100%;
+                                            padding: 1px;
+                                            border: none;
+                                            background: none;
+                                            outline: 0;
+                                            color: #fff;
+                                            border-bottom: 1px solid #DE9D37;
+                                        }
 
                                         .boton-enviar{
                                             grid-column: 1 ;
                                             height: 46px;
-                                            width: 350px;
-                                            margin: 0px;
+                                            margin-top: 10px;
                                             background: #B69121;
                                             color: #000;
                                             border: 0;
                                             text-transform: uppercase;
-                                            padding: 0;
+                                            padding: 0.5em;
         
                                                 &:hover, &:focus{
                                                     background: #B69121;
