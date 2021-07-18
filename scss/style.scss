@@ -632,7 +632,11 @@ main{
 
     header{
         height: 90vh;
-        width: 97%;
+        /* width: 97%; */
+        margin-left: 45px;
+        margin-right: 0px;
+        border-left-width: 0px;
+        padding-left: 0px;
 
         .navbar{
             flex-direction: column;
@@ -640,10 +644,17 @@ main{
 
                 .menu{
                     margin: 10px 0 20px 0;
+                    width: 560px;
+                    padding: 0px;
+
+
+                    .link-wrapper{
+                        margin:0px 10px 0px 0px;
+                        padding: 0px;
+                    }
                 }
 
             .btn {
-                width: 316px;
                 padding: 5px 160px 5px 6px;
                 border: 1px;
                 margin: 0px 100px 0px 8px;    
@@ -656,7 +667,8 @@ main{
         width: 100%;
     
             #presentacion{
-                height: 740px;
+                height: 650px;
+                width: 700px;
     
             .row{
                 width: 100%;
@@ -671,6 +683,7 @@ main{
                 padding: 2rem 1rem 4.5rem 1rem;
                 margin-right: 0px;
                 top: 100px;
+                left: 120px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
                 position: relative;
@@ -761,7 +774,9 @@ main{
     /*Trabajos*/
     
         #porfolio{
-            height: 900px;
+            height: 180vh;
+            width: 100vw;
+            margin: 0px;
     
             .title2{
                 color: #DE9D37;
@@ -770,8 +785,9 @@ main{
                 font-family: "sansBold";
                 display: flex;
                 justify-content: center;
-                margin-top: 60px;
-                margin-bottom: 40px;
+                padding-left: 0px;
+                padding-right: 50px;
+                height: 50px;
             }
     
             .content-all{
@@ -835,15 +851,14 @@ main{
             } 
         
             .accordion{
-                width: 450px;
-                height: 300px;
+                width: 350px;
+                height: 400px;
                 position: relative;
-                top: 550px;
-                left: -120px;
-                bottom: 150px;
+                top: 200px;
+                bottom: 0px;
+                left: -30px;
                 right: 0px;
                 padding: 0px;
-                margin: 0 0 0 12px;
     
                 .accordion-body{
                     background: transparent;
@@ -888,11 +903,13 @@ main{
     /*Contacto*/
         
     #contacto{
-        margin-bottom: 20px;
+        padding-bottom: 50px;
         width: 740px;
+        height: 500px;
 
         .content{
             width: 740px;
+            height: 500px;
             margin: 0px;
             padding: 0px;
 
@@ -900,17 +917,17 @@ main{
                     display: grid;
                     grid-template-columns: 2fr 1fr;
                     box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
-                    padding: 1em;
-                    height: 420px;
-                    width: 740px;
-                    margin: 0 0 10px 0;
+                    padding: 10px;
+                    height: 470px;
+                    width: 675px;
+                    margin-left: 10px;
 
                         .contact-form{
                             background: #222222;
-                            margin: 5px 0 11px 10px;
+                            margin: 0px;
                             padding: 12px;
-                            height: 370px;
-                            width: 324px;
+                            height: 444px;
+                            width: 382px;
                             display: grid;
                             grid-template-columns: 1fr;
 
@@ -987,32 +1004,37 @@ main{
 
                         .contact-info{
                             background: #000;
-                            width: 350px;
-                            margin: 30x 0 10px 0;
-                            padding: 10px 0 0 0;
+                            width: 200px;
+                            height: 350px;
+                            padding-top: 70px;
 
                                 h4, ul, p{
-                                    text-align: center;
-                                    margin: 0 0 1rem 0;
                                     color: #474c51
                                 }
 
                                 h4{
                                     font-size: 1.5em;
                                     text-align: center;
-                                    margin-left: 12px;
+                                    margin-left: 0px;
+                                    width: 280px;
                                 }
 
                                 ul{
-                                    padding: 0;
-                                    width: 350px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 288px;
                                     list-style: none;
                                 }
 
                                 li{
                                     color: #474c51;
-                                    padding: 20px ;
                                     font-size: 1.2em;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    margin-left: 50px;
                                 }
 
                                 img{
@@ -1026,6 +1048,14 @@ main{
                                     font-size: 1.5em;
                                     padding: 2%;
                                 }
+
+                                p{
+                                    width: 250px;
+                                    height: 40px;
+                                    padding-left: 0px;
+                                    margin-left: 20px;
+                                    margin-bottom: 10px;
+                                }
                         }
 
                 }
@@ -1037,6 +1067,7 @@ main{
     }
     #footer{
         margin-top: 50px;
+        width: 700px;
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
@@ -1045,10 +1076,14 @@ main{
                 .row{
                     display: flex;
                     flex-direction: column;
+                    padding-bottom: 35px;
+                    margin: 0px;
                 }
     
                 .pie{
-    
+                    width: 761px;
+                    padding: 0px;
+                    
                         ul{
                             display: flex;
                             flex-flow: row wrap;
