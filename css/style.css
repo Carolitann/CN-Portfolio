@@ -148,6 +148,7 @@ header .navbar .btn button:hover {
 
 /*Main*/
 main {
+  /*Presentacion*/
   /*Trabajos*/
   /*  #porfolio{
           height: 700px;
@@ -544,7 +545,7 @@ main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar
   width: 100%;
   margin: 30px 0 10px 0;
   padding: 5px;
-  background: #B69121;
+  background: #b69121a8;
   color: #000;
   border: 0;
   text-transform: uppercase;
@@ -629,9 +630,51 @@ main #contacto .content .contact-wrapper .contact-info i {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 130px;
+  position: relative;
+  z-index: 10;
+  width: 44px;
+  height: 50px;
 }
 #footer .menu-pie .row #social a {
-  padding: 1rem;
+  width: 44px;
+  height: 50px;
+  margin-left: 15px;
+  color: #b6912199;
+  backdrop-filter: blur(15px);
+  transition: color 0.4s;
+}
+#footer .menu-pie .row #social a:hover {
+  color: white;
+}
+#footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: #545453f5;
+  z-index: -1;
+  transition: clip-path 0.4s;
+  width: 100%;
+  height: 100%;
+}
+#footer .menu-pie .row #social a::after {
+  top: 5px;
+  left: 5px;
+  background: #545453f5;
+}
+#footer .menu-pie .row #social a::before {
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+#footer .menu-pie .row #social a:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 0 50px 0;
+}
+#footer .menu-pie .row #social a::after {
+  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+}
+#footer .menu-pie .row #social a:hover::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 50px 0 0 0;
 }
 #footer .menu-pie .row #social a .icono {
   color: #b6912199;
@@ -679,6 +722,7 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   main {
     width: 100%;
+    /*Presentacion*/
     /*Trabajos*/
     /*Contacto*/
   }
@@ -846,9 +890,15 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 350px;
     height: 400px;
     position: relative;
+<<<<<<< HEAD
     top: 200px;
     bottom: 0px;
     left: -30px;
+=======
+    top: 600px;
+    left: -120px;
+    bottom: 150px;
+>>>>>>> rama1
     right: 0px;
     padding: 0px;
   }
@@ -882,7 +932,12 @@ main #contacto .content .contact-wrapper .contact-info i {
     border-radius: 10px;
   }
   main #contacto {
+<<<<<<< HEAD
     padding-bottom: 50px;
+=======
+    margin-top: 200px;
+    margin-bottom: 20px;
+>>>>>>> rama1
     width: 740px;
     height: 500px;
   }
@@ -896,6 +951,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     display: grid;
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+<<<<<<< HEAD
     padding: 10px;
     height: 470px;
     width: 675px;
@@ -904,6 +960,16 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
     margin: 0px;
+=======
+    padding: 10px 0px;
+    height: 440px;
+    width: 700px;
+    margin: 0 0 10px 15px;
+  }
+  main #contacto .content .contact-wrapper .contact-form {
+    background: #222222;
+    margin: 25px 0px 0px 10px;
+>>>>>>> rama1
     padding: 12px;
     height: 444px;
     width: 382px;
@@ -956,7 +1022,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 100%;
     margin: 30px 0 10px 0;
     padding: 5px;
-    background: #B69121;
+    background: #b69121a8;
     color: #000;
     border: 0;
     text-transform: uppercase;
@@ -971,9 +1037,15 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #contacto .content .contact-wrapper .contact-info {
     background: #000;
+<<<<<<< HEAD
     width: 200px;
     height: 350px;
     padding-top: 70px;
+=======
+    width: 350px;
+    margin: 35px 40px 35px 0;
+    padding: 10px 0 0 0;
+>>>>>>> rama1
   }
   main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
     color: #474c51;
@@ -1024,8 +1096,12 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
-    height: 40vh;
+    height: 60vh;
   }
+  #footer .menu-pie .row {
+    height: 410px;
+  }
+<<<<<<< HEAD
   #footer .menu-pie .row {
     display: flex;
     flex-direction: column;
@@ -1037,40 +1113,46 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 0px;
   }
   #footer .menu-pie .pie ul {
+=======
+  #footer .menu-pie .row .pie {
+    padding: 0px;
+  }
+  #footer .menu-pie .row .pie ul {
+>>>>>>> rama1
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 150px;
+    margin: 150px 0px 10px 0px;
+    padding: 0px;
     list-style: none;
     text-decoration: none;
   }
-  #footer .menu-pie .pie li a {
+  #footer .menu-pie .row .pie ul li a {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 1.5rem;
+    padding: 15px 0 15px 15px;
     color: #ffffff;
     text-decoration: none;
   }
-  #footer .menu-pie .pie li a i {
+  #footer .menu-pie .row .pie ul li a i {
     color: #b6912199;
-    padding-right: 8px;
   }
-  #footer .menu-pie #social {
+  #footer .menu-pie .row #social {
     flex: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-top: 130px;
+    padding: 0px;
   }
-  #footer .menu-pie #social a {
+  #footer .menu-pie .row #social a {
     padding: 1rem;
   }
-  #footer .menu-pie #social a .icono {
+  #footer .menu-pie .row #social a .icono {
     color: #b6912199;
     border-radius: 1rem;
     font-size: 5rem;
   }
-  #footer .copy {
+  #footer .menu-pie .copy {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
     color: #6C757D;
     height: 50px;
@@ -1119,6 +1201,7 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   main {
     width: 100%;
+    /*Presentacion*/
     /*Trabajos*/
     /*Contacto*/
   }
@@ -1285,7 +1368,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 350px;
     height: 300px;
     position: relative;
-    top: -100px;
+    top: -160px;
     left: 0px;
     bottom: 150px;
     right: 0px;
@@ -1344,14 +1427,14 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding-left: 10px;
     margin-bottom: 10px;
     margin-right: 0px;
-    width: 380px;
+    width: 360px;
     height: 540px;
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
     margin: 0;
     padding: 0.5em;
-    width: 360px;
+    width: 340px;
     height: 330px;
     display: grid;
     grid-template-columns: 1fr;
@@ -1391,7 +1474,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     grid-column: 1;
     height: 46px;
     margin-top: 10px;
-    background: #B69121;
+    background: #b69121a8;
     color: #000;
     border: 0;
     text-transform: uppercase;
@@ -1406,7 +1489,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #contacto .content .contact-wrapper .contact-info {
     background: #000;
     width: 350px;
-    margin: 5px 0px 75px 0px;
+    margin: 5px 0px 0px 0px;
     padding: 0px;
   }
   main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
@@ -1426,8 +1509,8 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   #footer {
     margin-top: 50px;
-    height: 350px;
-    width: 418px;
+    height: 330px;
+    width: 380px;
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
@@ -1449,12 +1532,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   #footer .menu-pie .row .pie ul {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: 1 1 auto;
-    margin-top: 20px;
+    margin-top: 70px;
     list-style: none;
     text-decoration: none;
     padding-left: 0px;
@@ -1540,6 +1618,7 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   main {
     width: 100%;
+    /*Presentacion*/
     /*Trabajos*/
     /*Contacto*/
   }
@@ -1638,6 +1717,419 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #porfolio {
     height: 900px;
   }
+  main #porfolio .title2 {
+    color: #DE9D37;
+    align-items: center;
+    font-size: 40px;
+    font-family: "sansBold";
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  main #porfolio .content-all {
+    width: 100px;
+    perspective: 5000px;
+    position: relative;
+    margin: 0 0 750px 0;
+    padding: 100px 0 0 0;
+    right: 0px;
+  }
+  main #porfolio .content-all .content-carrousel {
+    width: 100%;
+    position: relative;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+  }
+  main #porfolio .content-all .content-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  main #porfolio .content-all .content-carrousel figure {
+    height: 310px;
+    width: 250px;
+    overflow: hidden;
+    position: absolute;
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(300px);
+  }
+  main #porfolio .content-all .content-carrousel figure .content-carrousel img {
+    width: 100%;
+  }
+  @keyframes rotar {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  main #porfolio .accordion {
+    width: 210px;
+    height: 300px;
+    position: relative;
+    top: 500px;
+    left: -45px;
+    right: 0%;
+    bottom: 150px;
+    padding: 0px;
+    margin: 0 0 0 12px;
+  }
+  main #porfolio .accordion .accordion-body {
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  main #porfolio .accordion .accordion-item {
+    background-color: transparent;
+    padding-bottom: 5px;
+  }
+  main #porfolio .accordion .accordion-collapse {
+    background-color: transparent;
+    color: #000000;
+    border-radius: 10px;
+  }
+  main #porfolio .accordion code {
+    font-weight: 500;
+    color: #B69121;
+  }
+  main #porfolio .accordion .accordion-button {
+    background-color: #000000b1;
+    border-radius: 10px;
+    color: #DE9D37;
+  }
+  main #porfolio .accordion .collapsed {
+    color: #01bad9;
+    background-color: #161623;
+    border-radius: 10px;
+  }
+  main #contacto {
+    margin-top: 100px;
+  }
+  main #contacto .content {
+    width: 330px;
+    margin: 0px;
+    padding: 0px;
+  }
+  main #contacto .content .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    margin-bottom: 10px;
+    width: 325px;
+    height: 620px;
+  }
+  main #contacto .content .contact-wrapper .contact-form {
+    background: #222222;
+    margin: 0;
+    padding: 0.5em;
+    width: 305px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main #contacto .content .contact-wrapper .contact-form .text-center-title {
+    height: 34px;
+    color: #f2f2f2;
+    font-size: 2em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario {
+    height: 300px;
+    width: 300px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario label {
+    color: #fff;
+    padding-top: 2px;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario textarea {
+    padding: 0px;
+    height: 100px;
+    width: 95%;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .name {
+    width: 95%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .mail {
+    width: 95%;
+    padding: 1px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #DE9D37;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar {
+    grid-column: 1;
+    width: 95%;
+    height: 41px;
+    margin-top: 15px;
+    background: #b69121a8;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+  main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:hover, main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar:focus {
+    background: #B69121;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info {
+    background: #000;
+    margin: 0 0 45px 0;
+    padding: 0 0 0 20px;
+    height: 130px;
+    width: 290px;
+  }
+  main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  main #contacto .content .contact-wrapper .contact-info ul {
+    padding: 0.5em;
+    list-style: none;
+  }
+  main #contacto .content .contact-wrapper .contact-info li {
+    padding: 0.25em;
+  }
+  main #contacto .content .contact-wrapper .contact-info i {
+    padding: 2%;
+  }
+
+  #footer {
+    margin-top: 50px;
+    height: 330px;
+    width: 340px;
+  }
+  #footer .menu-pie {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    height: 380px;
+    padding: 0px;
+    width: 343px;
+    margin: 0px;
+  }
+  #footer .menu-pie .row {
+    margin: 0px;
+    width: 340px;
+    height: 330px;
+    padding-bottom: 0px;
+  }
+  #footer .menu-pie .row .pie {
+    width: 340px;
+    padding: 0px;
+  }
+  #footer .menu-pie .row .pie ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+  }
+  #footer .menu-pie .row .pie li {
+    padding-bottom: 10px;
+  }
+  #footer .menu-pie .row .pie li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #footer .menu-pie .row .pie li a i {
+    color: #b6912199;
+    padding-right: 8px;
+  }
+  #footer .menu-pie .row #social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+    width: 340px;
+    padding-top: 40px;
+  }
+  #footer .menu-pie .row #social a {
+    padding: 10px 20px;
+  }
+  #footer .menu-pie .row #social a .icono {
+    color: #b6912199;
+    border-radius: 1rem;
+    font-size: 5rem;
+  }
+  #footer .copy {
+    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    color: #6C757D;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  header {
+    height: 90vh;
+    width: 93%;
+  }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  header .navbar .menu {
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+  header .navbar .btn {
+    width: 316px;
+    padding: 5px 0px 5px 6px;
+    border: 1px;
+    margin: 0px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  main {
+    width: 100%;
+    /*Presentacion*/
+    /*Trabajos*/
+    /*Contacto*/
+  }
+  main #presentacion {
+    height: 740px;
+  }
+  main #presentacion .row {
+    width: 100%;
+    height: 585px;
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main #presentacion .card {
+    display: inline-block;
+    width: 100%;
+    height: 547px;
+    padding: 2rem 1rem 4.5rem 1rem;
+    margin: 0;
+    top: 100px;
+    background: rgba(255, 255, 255, 0.279);
+    backdrop-filter: blur(5px);
+    position: relative;
+  }
+  main #presentacion .card::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid #01a4c0;
+    border-left: 20px solid #01a4c0;
+    border-right: 20px solid #00edfe32;
+    border-top: 20px solid #00edfe32;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  main #presentacion .card::before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #ba27bb;
+    border-right: 40px solid #ba27bb;
+    border-left: 40px solid #d02bd040;
+    border-bottom: 40px solid #d02bd040;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(5px -5px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  main #presentacion .card:nth-of-type(1) {
+    margin-right: 0;
+  }
+  main #presentacion .card .line {
+    position: relative;
+    top: 0px;
+    color: #DE9D37;
+    width: 16em;
+    margin-left: 0;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  main #presentacion .card .anim-typewriter {
+    animation: typewriter 2s steps(20) 1s 1 normal both, blinkTextCursor 500ms steps(20) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 6.2em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    to {
+      border-right-color: rgba(0, 0, 0, 0.265);
+    }
+    from {
+      border-right-color: transparent;
+    }
+  }
+  main #presentacion .card .text {
+    color: beige;
+    text-indent: 1rem;
+    line-height: 180%;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  main #porfolio {
+    height: 900px;
+  }
   main #porfolio .content-all {
     width: 100px;
     perspective: 5000px;
@@ -1653,8 +2145,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-family: "sansBold";
     display: flex;
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
   }
   main #porfolio .content-all .content-carrousel {
     width: 100%;
@@ -1700,12 +2192,18 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion {
     width: 200px;
-    height: 300px;
+    height: 280px;
     position: relative;
     padding-left: 0%;
     padding-right: 0%;
+<<<<<<< HEAD
     top: 500px;
     left: 0%;
+=======
+    margin-left: 0px;
+    top: 500px;
+    left: -50px;
+>>>>>>> rama1
     right: 0%;
   }
   main #porfolio .accordion .accordion-body {
@@ -1737,8 +2235,13 @@ main #contacto .content .contact-wrapper .contact-info i {
     background-color: #161623;
     border-radius: 10px;
   }
+  main #contacto {
+    width: 290px;
+    height: 620px;
+    margin-top: 200px;
+  }
   main #contacto .content {
-    width: 330px;
+    width: 290px;
     margin: 0px;
     padding: 0px;
   }
@@ -1746,28 +2249,29 @@ main #contacto .content .contact-wrapper .contact-info i {
     display: grid;
     grid-template-columns: 1fr;
     box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
-    padding: 1em;
+    padding: 10px;
     margin-bottom: 10px;
-    width: 330px;
+    width: 280px;
     height: 620px;
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
     margin: 0;
     padding: 0.5em;
-    width: 310px;
+    width: 260px;
     height: 340px;
     display: grid;
     grid-template-columns: 1fr;
   }
   main #contacto .content .contact-wrapper .contact-form .text-center-title {
     height: 34px;
+    width: 250px;
     color: #f2f2f2;
     font-size: 2em;
   }
   main #contacto .content .contact-wrapper .contact-form .formulario {
     height: 300px;
-    width: 300px;
+    width: 250px;
   }
   main #contacto .content .contact-wrapper .contact-form .formulario label {
     color: #fff;
@@ -1799,7 +2303,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     grid-column: 1;
     height: 41px;
     margin-top: 15px;
-    background: #B69121;
+    background: #b69121a8;
     color: #000;
     border: 0;
     text-transform: uppercase;
@@ -1816,7 +2320,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     margin: 0 0 45px 0;
     padding: 0 0 0 20px;
     height: 130px;
-    width: 290px;
+    width: 250px;
   }
   main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
     text-align: center;
@@ -1835,39 +2339,33 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   #footer {
     margin-top: 50px;
-    height: 350px;
-    width: 355px;
+    height: 330px;
+    width: 300px;
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
     height: 380px;
     padding: 0px;
-    width: 380px;
+    width: 300px;
   }
   #footer .menu-pie .row {
     margin: 0px;
-    width: 380px;
+    width: 300px;
     height: 330px;
     padding-bottom: 0px;
   }
   #footer .menu-pie .row .pie {
-    width: 340px;
-    padding: 0px;
+    width: 280px;
   }
   #footer .menu-pie .row .pie ul {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: 1 1 auto;
     margin-top: 20px;
+    padding: 20px 0px 0px 0px;
     list-style: none;
     text-decoration: none;
-    padding-left: 0px;
   }
   #footer .menu-pie .row .pie li {
-    padding-bottom: 10px;
+    display: flex;
   }
   #footer .menu-pie .row .pie li a {
     font-size: 15px;
@@ -1885,14 +2383,11 @@ main #contacto .content .contact-wrapper .contact-info i {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: 1 1 auto;
     margin-top: 0;
     width: 320px;
-    padding: 40px 35px 0 0;
   }
   #footer .menu-pie .row #social a {
-    padding: 1rem;
+    padding: 10px 20px;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;

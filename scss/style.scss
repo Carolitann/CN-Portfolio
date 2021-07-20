@@ -177,7 +177,7 @@ header{
 
 /*Main*/
 main{
-    
+/*Presentacion*/    
     #presentacion{
             height: 740px;
 
@@ -352,6 +352,7 @@ main{
                 }
             }
 
+<<<<<<< HEAD
         }
 
     } 
@@ -412,6 +413,10 @@ main{
         /*  #porfolio{
         height: 700px;
         margin-bottom: 200px;
+=======
+    #porfolio{
+        height: 900px;
+>>>>>>> rama1
 
         .title2{
             color: #DE9D37;
@@ -425,20 +430,19 @@ main{
         }
 
         .content-all{
-            width: 50px;
-            perspective: 1000px;
+            width: 170px;
+            left: 0px;
+            right: 0px;
+            margin: 0 0 750px 120px;
+            perspective: 5000px;
             position: relative;
-            margin-left: 10px;
-            margin-right: 0px;
-            padding-left: 280px;
-            padding-top: 100px;
-            margin-bottom: 750px;
-            right: 10px;
+            padding: 100px 0 0 150px;
+            
 
             .content-carrousel{
-                width: 50%;
+                width: 100%;
                 position: absolute;
-                animation: rotar 10s infinite linear;
+                animation: rotar 15s infinite linear;
                 transform-style: preserve-3d;
             
                         &:hover{
@@ -453,16 +457,19 @@ main{
                     position: absolute;
 
                         &:nth-child(1){ transform: rotateY(0deg)
-                            translateZ(150px)}
+                            translateZ(300px)}
 
-                        &:nth-child(2){ transform: rotateY(120deg)
-                            translateZ(150px);}
+                        &:nth-child(2){ transform: rotateY(72deg)
+                            translateZ(300px);}
 
-                        &:nth-child(3){ transform: rotateY(240deg)
-                            translateZ(150px);}
+                        &:nth-child(3){ transform: rotateY(144deg)
+                            translateZ(300px);}
 
-                        &:nth-child(4){ transform: rotateY(360deg)
-                            translateZ(150px); 
+                        &:nth-child(4){ transform: rotateY(216deg)
+                            translateZ(300px);}
+
+                        &:nth-child(5){ transform: rotateY(288deg)
+                            translateZ(300px);}    
                     
                     .content-carrousel img{
                         width: 100%;
@@ -481,32 +488,36 @@ main{
             }
 
         } 
-    
+
         .accordion{
-            width: 400px;
+            width: 450px;
             height: 300px;
             position: relative;
             top: 150px;
             left: 700px;
+            bottom: 0px;
             right: 0px;
+            padding: 0px;
+            margin: 0 0 0 12px;
 
             .accordion-body{
                 background: transparent;
                 color: white;
                 border-radius: 10px;
                 margin-top: 8px;
+                font-size: 1.3rem
             }
 
             .accordion-item{
                 background-color: transparent;
-                padding: 8px 0px;
+                padding-bottom: 5px;
             }
 
             .accordion-collapse{
                 background-color: transparent;
                 color: #000000;
                 border-radius: 10px;
-                font-size: 13px;
+                
             }
 
             code{
@@ -518,22 +529,26 @@ main{
                 background-color:  #000000b1;
                 border-radius: 10px;
                 color: #DE9D37;
-                font-size: 15px;
+                font-size: 1.5rem;
             }
 
             .collapsed{
                 color: #01bad9;
                 background-color: #161623;
                 border-radius: 10px;
-                font-size: 15px;
+                font-size: 1.5rem;
             }
 
         }
 
     }
+<<<<<<< HEAD
 } */
 /*Contacto*/
+=======
+>>>>>>> rama1
 
+/*Contacto*/
     #contacto{
         margin-bottom: 20px;
 
@@ -611,7 +626,7 @@ main{
                                                 width: 100%;
                                                 margin: 30px 0 10px 0;
                                                 padding: 5px;
-                                                background: #B69121;
+                                                background: #b69121a8;
                                                 color: #000;
                                                 border: 0;
                                                 text-transform: uppercase;
@@ -678,11 +693,9 @@ main{
         }
 
     }
-
-
 }
-/*Footer*/
 
+/*Footer*/
 #footer{
     margin-top: 50px;
     height: 200px;
@@ -726,15 +739,66 @@ main{
                     flex-flow: row wrap;
                     justify-content: center;
                     margin-top: 130px;
+                    position: relative;
+                    z-index: 10;
+                    width: 44px;
+                    height: 50px;
+                    
 
                         a{   
-                            padding: 1rem;
+                            width: 44px;
+                            height: 50px;
+                            margin-left: 15px;
+                            color:#b6912199;
+                            backdrop-filter: blur(15px);
+                            transition: color .4s;
                             
-                            .icono{
-                                color: #b6912199;
-                                border-radius: 1rem;                                  
-                                font-size: 5rem; 
-                            }     
+                            &:hover{
+                                color: rgba(255, 255, 255);
+                            }
+        
+                            &::before,
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: -5px;
+                                left: -5px;
+                                background: #545453f5;
+                                z-index: -1;
+                                transition: clip-path 0.4s;
+                                width: 100%;
+                                height: 100%;
+                            }
+        
+                            &::after{
+                                top: 5px;
+                                left: 5px;
+                                background: #545453f5;
+                            }
+        
+                            &::before{
+                                clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                            }
+        
+                            &:hover::before{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 0 0 50px 0;
+                            }
+        
+                            &::after{
+                                clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                            }
+        
+                            &:hover::after{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 50px 0 0 0;
+                            }
+                                
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                 
                         }
                 }   
@@ -758,11 +822,7 @@ main{
 
     header{
         height: 90vh;
-        /* width: 97%; */
-        margin-left: 45px;
-        margin-right: 0px;
-        border-left-width: 0px;
-        padding-left: 0px;
+        width: 97%;
 
         .navbar{
             flex-direction: column;
@@ -770,17 +830,10 @@ main{
 
                 .menu{
                     margin: 10px 0 20px 0;
-                    width: 560px;
-                    padding: 0px;
-
-
-                    .link-wrapper{
-                        margin:0px 10px 0px 0px;
-                        padding: 0px;
-                    }
                 }
 
             .btn {
+                width: 316px;
                 padding: 5px 160px 5px 6px;
                 border: 1px;
                 margin: 0px 100px 0px 8px;    
@@ -791,10 +844,9 @@ main{
     }
     main{
         width: 100%;
-    
-            #presentacion{
-                height: 650px;
-                width: 700px;
+    /*Presentacion*/
+        #presentacion{
+                height: 740px;
     
             .row{
                 width: 100%;
@@ -809,7 +861,6 @@ main{
                 padding: 2rem 1rem 4.5rem 1rem;
                 margin-right: 0px;
                 top: 100px;
-                left: 120px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
                 position: relative;
@@ -896,13 +947,9 @@ main{
                     }
             }
         }
-    
     /*Trabajos*/
-    
         #porfolio{
-            height: 180vh;
-            width: 100vw;
-            margin: 0px;
+            height: 900px;
     
             .title2{
                 color: #DE9D37;
@@ -911,9 +958,8 @@ main{
                 font-family: "sansBold";
                 display: flex;
                 justify-content: center;
-                padding-left: 0px;
-                padding-right: 50px;
-                height: 50px;
+                margin-top: 60px;
+                margin-bottom: 40px;
             }
     
             .content-all{
@@ -977,14 +1023,15 @@ main{
             } 
         
             .accordion{
-                width: 350px;
-                height: 400px;
+                width: 450px;
+                height: 300px;
                 position: relative;
-                top: 200px;
-                bottom: 0px;
-                left: -30px;
+                top: 600px;
+                left: -120px;
+                bottom: 150px;
                 right: 0px;
                 padding: 0px;
+                margin: 0 0 0 12px;
     
                 .accordion-body{
                     background: transparent;
@@ -1024,247 +1071,228 @@ main{
     
             }
     
-        }
-        
+        }    
     /*Contacto*/
-        
-    #contacto{
-        padding-bottom: 50px;
-        width: 740px;
-        height: 500px;
-
-        .content{
+        #contacto{
+            margin-top: 200px;
+            margin-bottom: 20px;
             width: 740px;
-            height: 500px;
-            margin: 0px;
-            padding: 0px;
 
-                .contact-wrapper{
-                    display: grid;
-                    grid-template-columns: 2fr 1fr;
-                    box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
-                    padding: 10px;
-                    height: 470px;
-                    width: 675px;
-                    margin-left: 10px;
+            .content{
+                width: 740px;
+                margin: 0px;
+                padding: 0px;
 
-                        .contact-form{
-                            background: #222222;
-                            margin: 0px;
-                            padding: 12px;
-                            height: 444px;
-                            width: 382px;
-                            display: grid;
-                            grid-template-columns: 1fr;
+                    .contact-wrapper{
+                        display: grid;
+                        grid-template-columns: 2fr 1fr;
+                        box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
+                        padding: 10px 0px;
+                        height: 440px;
+                        width: 700px;
+                        margin: 0 0 10px 15px;
 
-                                .text-center-title{
-                                    height: 34px;
-                                    color: #f2f2f2;
-                                    font-size: 2.5em;
-                                }
+                            .contact-form{
+                                background: #222222;
+                                margin: 25px 0px 0px 10px;
+                                padding: 12px;
+                                height: 370px;
+                                width: 324px;
+                                display: grid;
+                                grid-template-columns: 1fr;
 
-                                    .formulario{
-                                        height: 300px;
-
-                                            label{
-                                                color: #fff;
-                                                padding-top: 8px;
-                                                font-size: 12px;
-                                            }
-        
-                                            textarea{
-                                                width: 100%;
-                                                height: 80px;
-                                                border: none;
-                                                background: none;
-                                                outline: 0;
-                                                color: #fff;
-                                                border-bottom: 1px solid #DE9D37; 
-                                            }   
-        
-                                            .name{
-                                                width: 100%;
-                                                height: 30px;
-                                                border: none;
-                                                background: none;
-                                                outline: 0;
-                                                color: #fff;
-                                                border-bottom: 1px solid #DE9D37;    
-                                            }
-        
-                                            .mail{
-                                                width: 100%;
-                                                height: 30px;
-                                                border: none;
-                                                background: none;
-                                                outline: 0;
-                                                color: #fff;
-                                                border-bottom: 1px solid #DE9D37;
-                                            }
-        
-                                            .boton-enviar{
-                                                grid-column: 1 ;
-                                                height: 50px;
-                                                width: 100%;
-                                                margin: 30px 0 10px 0;
-                                                padding: 5px;
-                                                background: #B69121;
-                                                color: #000;
-                                                border: 0;
-                                                text-transform: uppercase;
-                                                padding: 0.5em;
-                                                font-size: 16px;
-            
-                                                    &:hover, &:focus{
-                                                        background: #B69121;
-                                                        color: #fff;
-                                                        transition: background-color 1s ease-in-out ;
-                                                        outline: 0;
-                                                    }
-        
-                                            }
-    
+                                    .text-center-title{
+                                        height: 34px;
+                                        color: #f2f2f2;
+                                        font-size: 2.5em;
                                     }
 
-                        }
+                                        .formulario{
+                                            height: 300px;
 
-                        .contact-info{
-                            background: #000;
-                            width: 200px;
-                            height: 350px;
-                            padding-top: 70px;
+                                                label{
+                                                    color: #fff;
+                                                    padding-top: 8px;
+                                                    font-size: 12px;
+                                                }
+            
+                                                textarea{
+                                                    width: 100%;
+                                                    height: 80px;
+                                                    border: none;
+                                                    background: none;
+                                                    outline: 0;
+                                                    color: #fff;
+                                                    border-bottom: 1px solid #DE9D37; 
+                                                }   
+            
+                                                .name{
+                                                    width: 100%;
+                                                    height: 30px;
+                                                    border: none;
+                                                    background: none;
+                                                    outline: 0;
+                                                    color: #fff;
+                                                    border-bottom: 1px solid #DE9D37;    
+                                                }
+            
+                                                .mail{
+                                                    width: 100%;
+                                                    height: 30px;
+                                                    border: none;
+                                                    background: none;
+                                                    outline: 0;
+                                                    color: #fff;
+                                                    border-bottom: 1px solid #DE9D37;
+                                                }
+            
+                                                .boton-enviar{
+                                                    grid-column: 1 ;
+                                                    height: 50px;
+                                                    width: 100%;
+                                                    margin: 30px 0 10px 0;
+                                                    padding: 5px;
+                                                    background: #b69121a8;
+                                                    color: #000;
+                                                    border: 0;
+                                                    text-transform: uppercase;
+                                                    padding: 0.5em;
+                                                    font-size: 16px;
+                
+                                                        &:hover, &:focus{
+                                                            background: #B69121;
+                                                            color: #fff;
+                                                            transition: background-color 1s ease-in-out ;
+                                                            outline: 0;
+                                                        }
+            
+                                                }
+        
+                                        }
 
-                                h4, ul, p{
-                                    color: #474c51
-                                }
+                            }
 
-                                h4{
-                                    font-size: 1.5em;
-                                    text-align: center;
-                                    margin-left: 0px;
-                                    width: 280px;
-                                }
+                            .contact-info{
+                                background: #000;
+                                width: 350px;
+                                margin: 35px 40px 35px 0;
+                                padding: 10px 0 0 0;
 
-                                ul{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: flex-start;
-                                    align-items: flex-start;
-                                    width: 288px;
-                                    list-style: none;
-                                }
+                                    h4, ul, p{
+                                        text-align: center;
+                                        margin: 0 0 1rem 0;
+                                        color: #474c51
+                                    }
 
-                                li{
-                                    color: #474c51;
-                                    font-size: 1.2em;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-start;
-                                    margin-left: 50px;
-                                }
+                                    h4{
+                                        font-size: 1.5em;
+                                        text-align: center;
+                                        margin-left: 12px;
+                                    }
 
-                                img{
-                                    width: 30px;
-                                    height: 30px;
-                                    font-size: 1.7em;
-                                    padding: 0 2% 2% 0; 
-                                }
+                                    ul{
+                                        padding: 0;
+                                        width: 350px;
+                                        list-style: none;
+                                    }
 
-                                i{
-                                    font-size: 1.5em;
-                                    padding: 2%;
-                                }
+                                    li{
+                                        color: #474c51;
+                                        padding: 20px ;
+                                        font-size: 1.2em;
+                                    }
 
-                                p{
-                                    width: 250px;
-                                    height: 40px;
-                                    padding-left: 0px;
-                                    margin-left: 20px;
-                                    margin-bottom: 10px;
-                                }
-                        }
+                                    img{
+                                        width: 30px;
+                                        height: 30px;
+                                        font-size: 1.7em;
+                                        padding: 0 2% 2% 0; 
+                                    }
 
-                }
+                                    i{
+                                        font-size: 1.5em;
+                                        padding: 2%;
+                                    }
+                            }
+
+                    }
+
+            }
 
         }
-
-    }
     
     }
     #footer{
         margin-top: 50px;
-        width: 700px;
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
-                height: 40vh;
-
-                .row{
-                    display: flex;
-                    flex-direction: column;
-                    padding-bottom: 35px;
-                    margin: 0px;
-                }
-    
-                .pie{
-                    width: 761px;
-                    padding: 0px;
+                height: 60vh;
                     
-                        ul{
+                    .row{
+                        height: 410px;
+
+                            .pie{
+                                padding: 0px;
+
+                                    ul{
+                                        display: flex;
+                                        flex-flow: row wrap;
+                                        margin: 150px 0px 10px 0px;
+                                        padding: 0px;
+                                        list-style: none;
+                                        text-decoration: none;
+                                    
+                                        li{
+                
+                                            a{
+                                                font-size: 15px;
+                                                text-transform: uppercase;
+                                                padding: 15px 0 15px 15px;
+                                                color: #ffffff;
+                                                text-decoration: none;
+                                                    
+                                                    i{
+                                                    color:#b6912199;   
+                                                    }
+                                            }
+                                        }
+                                    }    
+                            }
+            
+                        #social{
+                            flex: auto;
                             display: flex;
                             flex-flow: row wrap;
                             justify-content: center;
-                            margin-top: 150px;
-                            list-style: none;
-                            text-decoration: none;
-                        }
-                            li{
-    
-                                    a{
-                                        font-size: 15px;
-                                        text-transform: uppercase;
-                                        padding: 1.5rem;
-                                        color: #ffffff;
-                                        text-decoration: none;
+                            margin-top: 130px;
+                            padding: 0px;
+            
+                                a{   
+                                    padding: 1rem;
+                                    
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                         
-                                            i{
-                                            color:#b6912199;   
-                                            padding-right: 8px; 
-                                            }
-                                    }
-                            }
-                }
+                                }
+                        }   
+                    }
+            
     
-                #social{
-                    flex: auto;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: center;
-                    margin-top: 130px;
-    
-                        a{   
-                            padding: 1rem;
-                            
-                            .icono{
-                                color: #b6912199;
-                                border-radius: 1rem;                                  
-                                font-size: 5rem; 
-                            }     
-                                
-                        }
-                }   
-        }
-    
-        .copy{
-            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
-            color: #6C757D;
-            height: 50px;
-            font-weight: 600;
-            font-size: 1.5rem;
-            padding-top: 10px;
-            text-align: center;
-    
-        }   
+                    .copy{
+                        background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+                        color: #6C757D;
+                        height: 50px;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        padding-top: 10px;
+                        text-align: center;
+                    
+                    }   
+            }        
     
     }
 }
@@ -1312,8 +1340,8 @@ main{
     }
     main{
         width: 100%;
-    
-            #presentacion{
+    /*Presentacion*/
+        #presentacion{
                 height: 740px;
     
             .row{
@@ -1416,9 +1444,7 @@ main{
                     }
             }
         }
-    
     /*Trabajos*/
-    
         #porfolio{
             height: 850%;
     
@@ -1499,7 +1525,7 @@ main{
                 width: 350px;
                 height: 300px;
                 position: relative;
-                top: -100px;
+                top: -160px;
                 left: 0px;
                 bottom: 150px;
                 right: 0px;
@@ -1547,10 +1573,8 @@ main{
     
             }
     
-        }
-        
+        }    
     /*Contacto*/
-    
         #contacto{
             padding: 0px;
             width: 370px;
@@ -1571,14 +1595,14 @@ main{
                         padding-left: 10px;
                         margin-bottom: 10px;
                         margin-right: 0px;
-                        width: 380px;
+                        width: 360px;
                         height: 540px;
     
                             .contact-form{
                                 background: #222222;
                                 margin: 0;
                                 padding: 0.5em;
-                                width: 360px;
+                                width: 340px;
                                 height: 330px;
                                 display: grid;
                                 grid-template-columns: 1fr;
@@ -1625,7 +1649,7 @@ main{
                                             grid-column: 1 ;
                                             height: 46px;
                                             margin-top: 10px;
-                                            background: #B69121;
+                                            background: #b69121a8;
                                             color: #000;
                                             border: 0;
                                             text-transform: uppercase;
@@ -1647,7 +1671,7 @@ main{
                                     .contact-info{
                                         background: #000;
                                         width: 350px;
-                                        margin: 5px 0px 75px 0px;
+                                        margin: 5px 0px 0px 0px;
                                         padding: 0px;
                                         
                                             h4, ul, p{
@@ -1679,8 +1703,8 @@ main{
     }
     #footer{
         margin-top: 50px;
-        height: 350px;
-        width: 418px;
+        height: 330px;
+        width: 380px;
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
@@ -1702,12 +1726,7 @@ main{
 
                             ul{
                                 display: flex;
-                                flex-flow: column nowrap;
-                                justify-content: center;
-                                align-items: center;
-                                align-content: center;
-                                align-self: 1 1 auto;
-                                margin-top: 20px;
+                                margin-top: 70px;
                                 list-style: none;
                                 text-decoration: none;
                                 padding-left: 0px;
@@ -1769,7 +1788,6 @@ main{
     }   
 }
 
-
 @media only screen and (min-width: 360px) and (max-width: 399px) {
 
     header{
@@ -1813,7 +1831,7 @@ main{
     }
     main{
         width: 100%;
-    
+        /*Presentacion*/
             #presentacion{
                 height: 740px;
     
@@ -1916,10 +1934,492 @@ main{
                         font-weight: 500;
                     }
             }
+        }    
+        /*Trabajos*/       
+            #porfolio{
+                height: 900px;
+
+                
+                .title2{
+                    color: #DE9D37;
+                    align-items: center;
+                    font-size: 40px;
+                    font-family: "sansBold";
+                    display: flex;
+                    justify-content: center;
+                    margin: 0px;
+                }
+
+                .content-all{
+                    width: 100px;
+                    perspective: 5000px;
+                    position: relative;
+                    margin: 0 0 750px 0;
+                    padding: 100px 0 0 0;
+                    right: 0px;
+
+                    .content-carrousel{
+                        width: 100%;
+                        position: relative;
+                        animation: rotar 10s infinite linear;
+                        transform-style: preserve-3d;
+                    
+                                &:hover{
+                                    animation-play-state: paused;
+                                    cursor: pointer;
+                                }
+
+                        figure{
+                            height: 310px;
+                            width: 250px;
+                            overflow: hidden;
+                            position: absolute;
+
+                                &:nth-child(1){ transform: rotateY(0deg)
+                                    translateZ(300px)}
+
+                                &:nth-child(2){ transform: rotateY(72deg)
+                                    translateZ(300px);}
+
+                                &:nth-child(3){ transform: rotateY(144deg)
+                                    translateZ(300px);}
+
+                                &:nth-child(4){ transform: rotateY(216deg)
+                                    translateZ(300px);}
+
+                                &:nth-child(5){ transform: rotateY(288deg)
+                                    translateZ(300px);}    
+                            
+                            .content-carrousel img{
+                                width: 100%;
+                            }    
+
+                        }   
+                        
+                        @keyframes rotar {
+                            from{
+                                transform: rotateY(0deg);
+                            }to{
+                                transform: rotateY(360deg);
+                            }
+                        }
+
+                    }
+            
+                }
+                
+                .accordion{
+                    width: 210px;
+                    height: 300px;
+                    position: relative;
+                    top: 500px;
+                    left: -45px;
+                    right: 0%;
+                    bottom: 150px;
+                    padding: 0px;
+                    margin: 0 0 0 12px;
+        
+                    .accordion-body{
+                        background: transparent;
+                        color: white;
+                        border-radius: 10px;
+                        margin-top: 8px;
+                    }
+        
+                    .accordion-item{
+                        background-color: transparent;
+                        padding-bottom: 5px;
+                    }
+        
+                    .accordion-collapse{
+                        background-color: transparent;
+                        color: #000000;
+                        border-radius: 10px;
+                        
+                    }
+        
+                    code{
+                        font-weight: 500;
+                        color: #B69121;
+                    }
+        
+                    .accordion-button{
+                        background-color:  #000000b1;
+                        border-radius: 10px;
+                        color: #DE9D37;
+                    }
+        
+                    .collapsed{
+                        color: #01bad9;
+                        background-color: #161623;
+                        border-radius: 10px;
+                    }
+    
+                }   
+                
+            }    
+        /*Contacto*/                   
+            #contacto{
+                margin-top: 100px;
+
+                .content{
+                    width: 330px ;
+                    margin: 0px;
+                    padding: 0px;
+
+                    .contact-wrapper{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
+                        padding: 1em;
+                        margin-bottom: 10px;
+                        width: 325px;
+                        height: 620px;
+
+                        .contact-form{
+                            background: #222222;
+                            margin: 0;
+                            padding: 0.5em;
+                            width: 305px;
+                            height: 340px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+
+                                .text-center-title{
+                                    height: 34px;
+                                    color: #f2f2f2;
+                                    font-size: 2em;
+                                }
+                                            
+                                .formulario{
+
+                                    height: 300px;
+                                    width: 300px;
+
+                                    label{
+                                        color: #fff;
+                                        padding-top: 2px;
+                                    }
+
+                                    textarea{
+                                        padding:0px;
+                                        height: 100px;
+                                        width: 95%;
+                                    }   
+
+                                    .name{
+                                        width: 95%;
+                                        padding: 1px;
+                                        border: none;
+                                        background: none;
+                                        outline: 0;
+                                        color: #fff;
+                                        border-bottom: 1px solid #DE9D37;    
+                                    }
+
+                                    .mail{
+                                        width: 95%;
+                                        padding: 1px;
+                                        border: none;
+                                        background: none;
+                                        outline: 0;
+                                        color: #fff;
+                                        border-bottom: 1px solid #DE9D37;
+                                    }
+
+                                    .boton-enviar{
+                                        grid-column: 1 ;
+                                        width: 95%;
+                                        height: 41px;
+                                        margin-top: 15px;
+                                        background: #b69121a8;
+                                        color: #000;
+                                        border: 0;
+                                        text-transform: uppercase;
+                                        padding: 0.5em;
+                    
+                                            &:hover, &:focus{
+                                                background: #B69121;
+                                                color: #fff;
+                                                transition: background-color 1s ease-in-out ;
+                                                outline: 0;
+                                            }
+
+                                    }
+
+                                }
+
+                        }
+
+                            .contact-info{
+                                background: #000;
+                                margin: 0 0 45px 0;
+                                padding: 0 0 0 20px;
+                                height: 130px; 
+                                width: 290px;                   
+                                    
+                                    h4, ul, p{
+                                        text-align: center;
+                                        margin: 0 0 1rem 0;
+                                    }
+
+                                    ul{
+                                        padding: 0.5em;
+                                        list-style: none;
+                                    }
+
+                                    li{
+                                        padding: 0.25em;
+                                    }
+
+                                    i{
+                                        padding: 2%;
+                                    }
+                            }
+                    }
+                    
+                }
+
+            }     
+    }       
+    #footer{
+        margin-top: 50px;
+        height: 330px;
+        width: 340px;
+    
+            .menu-pie{
+                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                height: 380px;
+                padding: 0px;
+                width: 343px;
+                margin: 0px;
+    
+                .row{   
+                    margin: 0px;
+                    width: 340px;
+                    height: 330px;
+                    padding-bottom: 0px;
+                
+                    .pie{
+                        width: 340px;
+                        padding: 0px;
+
+                            ul{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                margin-top: 70px;
+                                list-style: none;
+                                text-decoration: none;
+                                padding: 10px;
+                            }
+                                li{
+                                    padding-bottom: 10px;
+
+                                        a{
+                                            font-size: 15px;
+                                            text-transform: uppercase;
+                                            padding: 1.5rem;
+                                            color: #ffffff;
+                                            text-decoration: none;
+                                            
+                                                i{
+                                                color:#b6912199;   
+                                                padding-right: 8px;
+                                                }
+                                        }
+                                }
+                    }
+        
+                    #social{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        margin-top: 0;
+                        width: 340px;
+                        padding-top: 40px;
+        
+                            a{   
+                                padding: 10px 20px;
+                                
+                                .icono{
+                                    color: #b6912199;
+                                    border-radius: 1rem;                                  
+                                    font-size: 5rem; 
+                                }     
+                                    
+                            }
+                    }
+                }       
         }
     
+        .copy{
+            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+            color: #6C757D;
+            height: 50px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            padding-top: 0px;
+            text-align: center;
+            margin-top: 0px;
+    
+        }   
+    
+    }  
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+
+    header{
+        height: 90vh;
+        width: 93%;
+
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+                .menu{
+                    margin: 10px 0 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    flex: 1 1 auto;
+                    align-self: center;
+                }
+
+            .btn {
+                width: 316px;
+                padding: 5px 0px 5px 6px;
+                border: 1px;
+                margin: 0px 0px 0px 8px; 
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex: 1 1 auto;
+                align-self: center;   
+            } 
+
+        }
+
+    }
+    main{
+        width: 100%;
+        /*Presentacion*/
+            #presentacion{
+                height: 740px;
+    
+            .row{
+                width: 100%;
+                height: 585px;
+                max-width: 45rem;
+                margin: 0 auto;
+                padding: 0;
+            }
+    
+            .card{
+                display: inline-block;
+                width: 100%;
+                height: 547px;
+                padding: 2rem 1rem 4.5rem 1rem;
+                margin: 0;
+                top: 100px;
+                background: rgba(255, 255, 255, 0.279);
+                backdrop-filter: blur(5px);
+                position: relative;
+    
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        background-color: skyblue;
+                        top: 0px;
+                        right: 0px;
+                        border-bottom: 20px solid darken(#01bad9, 5%);
+                        border-left: 20px solid darken(#01bad9, 5%);
+                        border-right: 20px solid #00edfe32;
+                        border-top: 20px solid #00edfe32;
+                        position: absolute;
+                        filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
+                    }  
+    
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        border-top: 40px solid darken(#cf2bd0, 5%);
+                        border-right: 40px solid darken(#cf2bd0, 5%);
+                        border-left: 40px solid  #d02bd040;
+                        border-bottom: 40px solid  #d02bd040;
+                        bottom: 0px;
+                        left: 0px;
+                        position: absolute;
+                        filter: drop-shadow(5px -5px 5px rgba(0,0,0,0.5));
+                        margin-right: 10%;
+                    }
+    
+                    &:nth-of-type(1){
+                        margin-right: 0;
+                    }
+    
+                    .line{
+                        position: relative;
+                        top: 0px;
+                        color: #DE9D37;
+                        width: 16em;
+                        margin-left: 0;
+                        border-right: 2px solid rgba(255,255,255,0.75);
+                        font-size: 38px;
+                        text-align: left;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        transform: translateY(-50%);
+                    }
+    
+                    .anim-typewriter{
+                        animation: typewriter 2s steps(20) 1s 1 normal both,
+                        blinkTextCursor 500ms steps(20) infinite normal;
+                    }
+                        
+                    @keyframes typewriter{
+                        from{
+                            width: 0;
+                        }
+                        to{
+                            width: 6.2em;
+                        }
+                    }
+                            
+                    @keyframes blinkTextCursor{
+                        to{
+                            border-right-color: rgba(0, 0, 0, 0.265);
+                        }
+                        from{
+                            border-right-color: transparent;
+                        }
+                    }
+    
+                    .text{
+                        color: beige;
+                        text-indent: 1rem;
+                        line-height: 180%;
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+            }
+        }
         /*Trabajos*/
-        
             #porfolio{
                 height: 900px;
 
@@ -1938,8 +2438,8 @@ main{
                         font-family: "sansBold";
                         display: flex;
                         justify-content: center;
-                        margin-top: 60px;
-                        margin-bottom: 40px;
+                        margin-top: 40px;
+                        margin-bottom: 0px;
                     }
 
                     .content-carrousel{
@@ -1994,12 +2494,13 @@ main{
                 
                 .accordion{
                     width: 200px;
-                    height: 300px;
+                    height: 280px;
                     position: relative;
                     padding-left: 0%;
                     padding-right: 0%;
+                    margin-left: 0px;
                     top: 500px;
-                    left: 0%;
+                    left: -50px;
                     right: 0%;
 
         
@@ -2042,12 +2543,14 @@ main{
                 }   
                 
             }    
-                    /*Contacto*/
-                    
+        /*Contacto*/            
             #contacto{
-                    
+                    width: 290px;
+                    height: 620px;
+                    margin-top: 200px;
+
                 .content{
-                    width: 330px ;
+                    width: 290px ;
                     margin: 0px;
                     padding: 0px;
 
@@ -2055,30 +2558,30 @@ main{
                         display: grid;
                         grid-template-columns: 1fr;
                         box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
-                        padding: 1em;
+                        padding: 10px;
                         margin-bottom: 10px;
-                        width: 330px;
+                        width: 280px;
                         height: 620px;
 
                         .contact-form{
                             background: #222222;
                             margin: 0;
                             padding: 0.5em;
-                            width: 310px;
+                            width: 260px;
                             height: 340px;
                             display: grid;
                             grid-template-columns: 1fr;
 
                                 .text-center-title{
                                     height: 34px;
+                                    width: 250px;
                                     color: #f2f2f2;
                                     font-size: 2em;
                                 }
                                             
                                 .formulario{
-
                                     height: 300px;
-                                    width: 300px;
+                                    width: 250px;
 
                                     label{
                                         color: #fff;
@@ -2114,7 +2617,7 @@ main{
                                         grid-column: 1 ;
                                         height: 41px;
                                         margin-top: 15px;
-                                        background: #B69121;
+                                        background: #b69121a8;
                                         color: #000;
                                         border: 0;
                                         text-transform: uppercase;
@@ -2138,7 +2641,7 @@ main{
                                 margin: 0 0 45px 0;
                                 padding: 0 0 0 20px;
                                 height: 130px; 
-                                width: 290px;                   
+                                width: 250px;                   
                                     
                                     h4, ul, p{
                                         text-align: center;
@@ -2162,44 +2665,37 @@ main{
                     
                 }
 
-            }
-            
+            }    
     }       
     #footer{
         margin-top: 50px;
-        height: 350px;
-        width:355px;
+        height: 330px;
+        width: 300px;
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
                 height: 380px;
                 padding: 0px;
-                width: 380px;
+                width: 300px;
     
                 .row{   
                     margin: 0px;
-                    width: 380px;
+                    width: 300px;
                     height: 330px;
                     padding-bottom: 0px;
                 
                     .pie{
-                        width: 340px;
-                        padding: 0px;
+                        width: 280px;
 
                             ul{
                                 display: flex;
-                                flex-flow: column nowrap;
-                                justify-content: center;
-                                align-items: center;
-                                align-content: center;
-                                align-self: 1 1 auto;
                                 margin-top: 20px;
+                                padding: 20px 0px 0px 0px;
                                 list-style: none;
                                 text-decoration: none;
-                                padding-left: 0px;
                             }
                                 li{
-                                    padding-bottom: 10px;
+                                    display: flex;
 
                                         a{
                                             font-size: 15px;
@@ -2221,14 +2717,11 @@ main{
                         flex-flow: row nowrap;
                         justify-content: center;
                         align-items: center;
-                        align-content: center;
-                        align-self: 1 1 auto;
                         margin-top: 0;
                         width: 320px;
-                        padding: 40px 35px 0 0;
         
                             a{   
-                                padding: 1rem;
+                                padding: 10px 20px;
                                 
                                 .icono{
                                     color: #b6912199;
