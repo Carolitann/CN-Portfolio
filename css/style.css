@@ -150,129 +150,6 @@ header .navbar .btn button:hover {
 main {
   /*Presentacion*/
   /*Trabajos*/
-  /*  #porfolio{
-          height: 700px;
-          margin-bottom: 200px;
-
-          .title2{
-              color: #DE9D37;
-              align-items: center;
-              font-size: 40px;
-              font-family: "sansBold";
-              display: flex;
-              justify-content: center;
-              margin-top: 60px;
-              margin-bottom: 40px;
-          }
-
-          .content-all{
-              width: 50px;
-              perspective: 1000px;
-              position: relative;
-              margin-left: 10px;
-              margin-right: 0px;
-              padding-left: 280px;
-              padding-top: 100px;
-              margin-bottom: 750px;
-              right: 10px;
-
-              .content-carrousel{
-                  width: 50%;
-                  position: absolute;
-                  animation: rotar 10s infinite linear;
-                  transform-style: preserve-3d;
-
-                          &:hover{
-                              animation-play-state: paused;
-                              cursor: pointer;
-                          }
-
-                  figure{
-                      height: 320px;
-                      width: 250px;
-                      overflow: hidden;
-                      position: absolute;
-
-                          &:nth-child(1){ transform: rotateY(0deg)
-                              translateZ(150px)}
-
-                          &:nth-child(2){ transform: rotateY(120deg)
-                              translateZ(150px);}
-
-                          &:nth-child(3){ transform: rotateY(240deg)
-                              translateZ(150px);}
-
-                          &:nth-child(4){ transform: rotateY(360deg)
-                              translateZ(150px); 
-
-                      .content-carrousel img{
-                          width: 100%;
-                      }    
-
-                  }   
-
-                  @keyframes rotar {
-                      from{
-                          transform: rotateY(0deg);
-                      }to{
-                          transform: rotateY(360deg);
-                      }
-                  }
-
-              }
-
-          } 
-
-          .accordion{
-              width: 400px;
-              height: 300px;
-              position: relative;
-              top: 150px;
-              left: 700px;
-              right: 0px;
-
-              .accordion-body{
-                  background: transparent;
-                  color: white;
-                  border-radius: 10px;
-                  margin-top: 8px;
-              }
-
-              .accordion-item{
-                  background-color: transparent;
-                  padding: 8px 0px;
-              }
-
-              .accordion-collapse{
-                  background-color: transparent;
-                  color: #000000;
-                  border-radius: 10px;
-                  font-size: 13px;
-              }
-
-              code{
-                  font-weight: 500;
-                  color: #B69121;
-              }
-
-              .accordion-button{
-                  background-color:  #000000b1;
-                  border-radius: 10px;
-                  color: #DE9D37;
-                  font-size: 15px;
-              }
-
-              .collapsed{
-                  color: #01bad9;
-                  background-color: #161623;
-                  border-radius: 10px;
-                  font-size: 15px;
-              }
-
-          }
-
-      }
-  } */
   /*Contacto*/
 }
 main #presentacion {
@@ -695,11 +572,7 @@ main #contacto .content .contact-wrapper .contact-info i {
 @media only screen and (min-width: 768px) and (max-width: 940px) {
   header {
     height: 90vh;
-    /* width: 97%; */
-    margin-left: 45px;
-    margin-right: 0px;
-    border-left-width: 0px;
-    padding-left: 0px;
+    width: 97%;
   }
   header .navbar {
     flex-direction: column;
@@ -707,14 +580,9 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   header .navbar .menu {
     margin: 10px 0 20px 0;
-    width: 560px;
-    padding: 0px;
-  }
-  header .navbar .menu .link-wrapper {
-    margin: 0px 10px 0px 0px;
-    padding: 0px;
   }
   header .navbar .btn {
+    width: 316px;
     padding: 5px 160px 5px 6px;
     border: 1px;
     margin: 0px 100px 0px 8px;
@@ -727,8 +595,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     /*Contacto*/
   }
   main #presentacion {
-    height: 650px;
-    width: 700px;
+    height: 740px;
   }
   main #presentacion .row {
     width: 100%;
@@ -742,7 +609,6 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 2rem 1rem 4.5rem 1rem;
     margin-right: 0px;
     top: 100px;
-    left: 120px;
     background: rgba(255, 255, 255, 0.279);
     backdrop-filter: blur(5px);
     position: relative;
@@ -820,9 +686,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-weight: 500;
   }
   main #porfolio {
-    height: 180vh;
-    width: 100vw;
-    margin: 0px;
+    height: 900px;
   }
   main #porfolio .title2 {
     color: #DE9D37;
@@ -831,9 +695,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-family: "sansBold";
     display: flex;
     justify-content: center;
-    padding-left: 0px;
-    padding-right: 50px;
-    height: 50px;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
   main #porfolio .content-all {
     width: 170px;
@@ -887,20 +750,15 @@ main #contacto .content .contact-wrapper .contact-info i {
     }
   }
   main #porfolio .accordion {
-    width: 350px;
-    height: 400px;
+    width: 450px;
+    height: 300px;
     position: relative;
-<<<<<<< HEAD
-    top: 200px;
-    bottom: 0px;
-    left: -30px;
-=======
     top: 600px;
     left: -120px;
     bottom: 150px;
->>>>>>> rama1
     right: 0px;
     padding: 0px;
+    margin: 0 0 0 12px;
   }
   main #porfolio .accordion .accordion-body {
     background: transparent;
@@ -932,18 +790,12 @@ main #contacto .content .contact-wrapper .contact-info i {
     border-radius: 10px;
   }
   main #contacto {
-<<<<<<< HEAD
-    padding-bottom: 50px;
-=======
     margin-top: 200px;
     margin-bottom: 20px;
->>>>>>> rama1
     width: 740px;
-    height: 500px;
   }
   main #contacto .content {
     width: 740px;
-    height: 500px;
     margin: 0px;
     padding: 0px;
   }
@@ -951,16 +803,6 @@ main #contacto .content .contact-wrapper .contact-info i {
     display: grid;
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
-<<<<<<< HEAD
-    padding: 10px;
-    height: 470px;
-    width: 675px;
-    margin-left: 10px;
-  }
-  main #contacto .content .contact-wrapper .contact-form {
-    background: #222222;
-    margin: 0px;
-=======
     padding: 10px 0px;
     height: 440px;
     width: 700px;
@@ -969,10 +811,9 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
     margin: 25px 0px 0px 10px;
->>>>>>> rama1
     padding: 12px;
-    height: 444px;
-    width: 382px;
+    height: 370px;
+    width: 324px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -1037,40 +878,29 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #contacto .content .contact-wrapper .contact-info {
     background: #000;
-<<<<<<< HEAD
-    width: 200px;
-    height: 350px;
-    padding-top: 70px;
-=======
     width: 350px;
     margin: 35px 40px 35px 0;
     padding: 10px 0 0 0;
->>>>>>> rama1
   }
   main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
     color: #474c51;
   }
   main #contacto .content .contact-wrapper .contact-info h4 {
     font-size: 1.5em;
     text-align: center;
-    margin-left: 0px;
-    width: 280px;
+    margin-left: 12px;
   }
   main #contacto .content .contact-wrapper .contact-info ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 288px;
+    padding: 0;
+    width: 350px;
     list-style: none;
   }
   main #contacto .content .contact-wrapper .contact-info li {
     color: #474c51;
+    padding: 20px;
     font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 50px;
   }
   main #contacto .content .contact-wrapper .contact-info img {
     width: 30px;
@@ -1082,17 +912,9 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 1.5em;
     padding: 2%;
   }
-  main #contacto .content .contact-wrapper .contact-info p {
-    width: 250px;
-    height: 40px;
-    padding-left: 0px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
 
   #footer {
     margin-top: 50px;
-    width: 700px;
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
@@ -1101,24 +923,10 @@ main #contacto .content .contact-wrapper .contact-info i {
   #footer .menu-pie .row {
     height: 410px;
   }
-<<<<<<< HEAD
-  #footer .menu-pie .row {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 35px;
-    margin: 0px;
-  }
-  #footer .menu-pie .pie {
-    width: 761px;
-    padding: 0px;
-  }
-  #footer .menu-pie .pie ul {
-=======
   #footer .menu-pie .row .pie {
     padding: 0px;
   }
   #footer .menu-pie .row .pie ul {
->>>>>>> rama1
     display: flex;
     flex-flow: row wrap;
     margin: 150px 0px 10px 0px;
@@ -2196,14 +2004,9 @@ main #contacto .content .contact-wrapper .contact-info i {
     position: relative;
     padding-left: 0%;
     padding-right: 0%;
-<<<<<<< HEAD
-    top: 500px;
-    left: 0%;
-=======
     margin-left: 0px;
     top: 500px;
     left: -50px;
->>>>>>> rama1
     right: 0%;
   }
   main #porfolio .accordion .accordion-body {
