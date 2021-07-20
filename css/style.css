@@ -876,43 +876,49 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
-    height: 40vh;
+    height: 60vh;
   }
-  #footer .menu-pie .pie ul {
+  #footer .menu-pie .row {
+    height: 410px;
+  }
+  #footer .menu-pie .row .pie {
+    padding: 0px;
+  }
+  #footer .menu-pie .row .pie ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 150px;
+    margin: 200px 0px 10px 0px;
+    padding: 0px;
     list-style: none;
     text-decoration: none;
   }
-  #footer .menu-pie .pie li a {
+  #footer .menu-pie .row .pie ul li a {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 1.5rem;
+    padding: 15px 0 15px 15px;
     color: #ffffff;
     text-decoration: none;
   }
-  #footer .menu-pie .pie li a i {
+  #footer .menu-pie .row .pie ul li a i {
     color: #b6912199;
-    padding-right: 8px;
   }
-  #footer .menu-pie #social {
+  #footer .menu-pie .row #social {
     flex: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 180px;
+    padding: 0px;
   }
-  #footer .menu-pie #social a {
+  #footer .menu-pie .row #social a {
     padding: 1rem;
   }
-  #footer .menu-pie #social a .icono {
+  #footer .menu-pie .row #social a .icono {
     color: #b6912199;
     border-radius: 1rem;
     font-size: 5rem;
   }
-  #footer .copy {
+  #footer .menu-pie .copy {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
     color: #6C757D;
     height: 50px;
@@ -1729,13 +1735,12 @@ main #contacto .content .contact-wrapper .contact-info i {
     justify-content: center;
     align-items: center;
     align-content: center;
-    align-self: 1 1 auto;
     margin-top: 0;
     width: 340px;
     padding-top: 40px;
   }
   #footer .menu-pie .row #social a {
-    padding: 1rem;
+    padding: 10px 20px;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;
@@ -1884,8 +1889,8 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #presentacion .card .text {
     color: beige;
     text-indent: 1rem;
-    line-height: 200%;
-    font-size: 1rem;
+    line-height: 180%;
+    font-size: 11px;
     font-weight: 500;
   }
   main #porfolio {
@@ -1906,8 +1911,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-family: "sansBold";
     display: flex;
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
   }
   main #porfolio .content-all .content-carrousel {
     width: 100%;
@@ -1959,7 +1964,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding-right: 0%;
     margin-left: 0px;
     top: 500px;
-    left: 0%;
+    left: -50px;
     right: 0%;
   }
   main #porfolio .accordion .accordion-body {
@@ -1992,11 +1997,12 @@ main #contacto .content .contact-wrapper .contact-info i {
     border-radius: 10px;
   }
   main #contacto {
-    width: 300px;
+    width: 290px;
     height: 620px;
+    margin-top: 200px;
   }
   main #contacto .content {
-    width: 300px;
+    width: 290px;
     margin: 0px;
     padding: 0px;
   }
@@ -2094,39 +2100,33 @@ main #contacto .content .contact-wrapper .contact-info i {
 
   #footer {
     margin-top: 50px;
-    height: 350px;
-    width: 355px;
+    height: 330px;
+    width: 300px;
   }
   #footer .menu-pie {
     background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
     height: 380px;
     padding: 0px;
-    width: 380px;
+    width: 300px;
   }
   #footer .menu-pie .row {
     margin: 0px;
-    width: 380px;
+    width: 300px;
     height: 330px;
     padding-bottom: 0px;
   }
   #footer .menu-pie .row .pie {
-    width: 340px;
-    padding: 0px;
+    width: 280px;
   }
   #footer .menu-pie .row .pie ul {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    align-self: 1 1 auto;
     margin-top: 20px;
+    padding: 20px 0px 0px 0px;
     list-style: none;
     text-decoration: none;
-    padding-left: 0px;
   }
   #footer .menu-pie .row .pie li {
-    padding-bottom: 10px;
+    display: flex;
   }
   #footer .menu-pie .row .pie li a {
     font-size: 15px;
@@ -2144,14 +2144,11 @@ main #contacto .content .contact-wrapper .contact-info i {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    align-self: 1 1 auto;
     margin-top: 0;
     width: 320px;
-    padding: 40px 35px 0 0;
   }
   #footer .menu-pie .row #social a {
-    padding: 1rem;
+    padding: 10px 20px;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;

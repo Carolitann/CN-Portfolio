@@ -1039,65 +1039,72 @@ main{
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
-                height: 40vh;
-    
-                .pie{
-    
-                        ul{
+                height: 60vh;
+                    
+                    .row{
+                        height: 410px;
+
+                            .pie{
+                                padding: 0px;
+
+                                    ul{
+                                        display: flex;
+                                        flex-flow: row wrap;
+                                        margin: 200px 0px 10px 0px;
+                                        padding: 0px;
+                                        list-style: none;
+                                        text-decoration: none;
+                                    
+                                        li{
+                
+                                            a{
+                                                font-size: 15px;
+                                                text-transform: uppercase;
+                                                padding: 15px 0 15px 15px;
+                                                color: #ffffff;
+                                                text-decoration: none;
+                                                    
+                                                    i{
+                                                    color:#b6912199;   
+                                                    }
+                                            }
+                                        }
+                                    }    
+                            }
+            
+                        #social{
+                            flex: auto;
                             display: flex;
                             flex-flow: row wrap;
                             justify-content: center;
-                            margin-top: 150px;
-                            list-style: none;
-                            text-decoration: none;
-                        }
-                            li{
-    
-                                    a{
-                                        font-size: 15px;
-                                        text-transform: uppercase;
-                                        padding: 1.5rem;
-                                        color: #ffffff;
-                                        text-decoration: none;
+                            margin-top: 180px;
+                            padding: 0px;
+            
+                                a{   
+                                    padding: 1rem;
+                                    
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                         
-                                            i{
-                                            color:#b6912199;   
-                                            padding-right: 8px; 
-                                            }
-                                    }
-                            }
-                }
+                                }
+                        }   
+                    }
+            
     
-                #social{
-                    flex: auto;
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: center;
-                    margin-top: 130px;
-    
-                        a{   
-                            padding: 1rem;
-                            
-                            .icono{
-                                color: #b6912199;
-                                border-radius: 1rem;                                  
-                                font-size: 5rem; 
-                            }     
-                                
-                        }
-                }   
-        }
-    
-        .copy{
-            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
-            color: #6C757D;
-            height: 50px;
-            font-weight: 600;
-            font-size: 1.5rem;
-            padding-top: 10px;
-            text-align: center;
-    
-        }   
+                    .copy{
+                        background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+                        color: #6C757D;
+                        height: 50px;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        padding-top: 10px;
+                        text-align: center;
+                    
+                    }   
+            }        
     
     }
 }
@@ -2043,13 +2050,12 @@ main{
                         justify-content: center;
                         align-items: center;
                         align-content: center;
-                        align-self: 1 1 auto;
                         margin-top: 0;
                         width: 340px;
                         padding-top: 40px;
         
                             a{   
-                                padding: 1rem;
+                                padding: 10px 20px;
                                 
                                 .icono{
                                     color: #b6912199;
@@ -2219,8 +2225,8 @@ main{
                     .text{
                         color: beige;
                         text-indent: 1rem;
-                        line-height: 200%;
-                        font-size: 1rem;
+                        line-height: 180%;
+                        font-size: 11px;
                         font-weight: 500;
                     }
             }
@@ -2244,8 +2250,8 @@ main{
                         font-family: "sansBold";
                         display: flex;
                         justify-content: center;
-                        margin-top: 60px;
-                        margin-bottom: 40px;
+                        margin-top: 40px;
+                        margin-bottom: 0px;
                     }
 
                     .content-carrousel{
@@ -2306,7 +2312,7 @@ main{
                     padding-right: 0%;
                     margin-left: 0px;
                     top: 500px;
-                    left: 0%;
+                    left: -50px;
                     right: 0%;
 
         
@@ -2351,11 +2357,12 @@ main{
             }    
         /*Contacto*/            
             #contacto{
-                    width: 300px;
+                    width: 290px;
                     height: 620px;
+                    margin-top: 200px;
 
                 .content{
-                    width: 300px ;
+                    width: 290px ;
                     margin: 0px;
                     padding: 0px;
 
@@ -2474,39 +2481,33 @@ main{
     }       
     #footer{
         margin-top: 50px;
-        height: 350px;
-        width:355px;
+        height: 330px;
+        width: 300px;
     
             .menu-pie{
                 background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
                 height: 380px;
                 padding: 0px;
-                width: 380px;
+                width: 300px;
     
                 .row{   
                     margin: 0px;
-                    width: 380px;
+                    width: 300px;
                     height: 330px;
                     padding-bottom: 0px;
                 
                     .pie{
-                        width: 340px;
-                        padding: 0px;
+                        width: 280px;
 
                             ul{
                                 display: flex;
-                                flex-flow: column nowrap;
-                                justify-content: center;
-                                align-items: center;
-                                align-content: center;
-                                align-self: 1 1 auto;
                                 margin-top: 20px;
+                                padding: 20px 0px 0px 0px;
                                 list-style: none;
                                 text-decoration: none;
-                                padding-left: 0px;
                             }
                                 li{
-                                    padding-bottom: 10px;
+                                    display: flex;
 
                                         a{
                                             font-size: 15px;
@@ -2528,14 +2529,11 @@ main{
                         flex-flow: row nowrap;
                         justify-content: center;
                         align-items: center;
-                        align-content: center;
-                        align-self: 1 1 auto;
                         margin-top: 0;
                         width: 320px;
-                        padding: 40px 35px 0 0;
         
                             a{   
-                                padding: 1rem;
+                                padding: 10px 20px;
                                 
                                 .icono{
                                     color: #b6912199;
