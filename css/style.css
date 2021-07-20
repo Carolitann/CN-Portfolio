@@ -507,9 +507,51 @@ main #contacto .content .contact-wrapper .contact-info i {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 130px;
+  position: relative;
+  z-index: 10;
+  width: 44px;
+  height: 50px;
 }
 #footer .menu-pie .row #social a {
-  padding: 1rem;
+  width: 44px;
+  height: 50px;
+  margin-left: 15px;
+  color: #b6912199;
+  backdrop-filter: blur(15px);
+  transition: color 0.4s;
+}
+#footer .menu-pie .row #social a:hover {
+  color: white;
+}
+#footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: #545453f5;
+  z-index: -1;
+  transition: clip-path 0.4s;
+  width: 100%;
+  height: 100%;
+}
+#footer .menu-pie .row #social a::after {
+  top: 5px;
+  left: 5px;
+  background: #545453f5;
+}
+#footer .menu-pie .row #social a::before {
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+#footer .menu-pie .row #social a:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 0 0 50px 0;
+}
+#footer .menu-pie .row #social a::after {
+  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+}
+#footer .menu-pie .row #social a:hover::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 50px 0 0 0;
 }
 #footer .menu-pie .row #social a .icono {
   color: #b6912199;
@@ -887,7 +929,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   #footer .menu-pie .row .pie ul {
     display: flex;
     flex-flow: row wrap;
-    margin: 200px 0px 10px 0px;
+    margin: 150px 0px 10px 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
@@ -907,7 +949,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 130px;
     padding: 0px;
   }
   #footer .menu-pie .row #social a {

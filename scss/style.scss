@@ -602,15 +602,66 @@ main{
                     flex-flow: row wrap;
                     justify-content: center;
                     margin-top: 130px;
+                    position: relative;
+                    z-index: 10;
+                    width: 44px;
+                    height: 50px;
+                    
 
                         a{   
-                            padding: 1rem;
+                            width: 44px;
+                            height: 50px;
+                            margin-left: 15px;
+                            color:#b6912199;
+                            backdrop-filter: blur(15px);
+                            transition: color .4s;
                             
-                            .icono{
-                                color: #b6912199;
-                                border-radius: 1rem;                                  
-                                font-size: 5rem; 
-                            }     
+                            &:hover{
+                                color: rgba(255, 255, 255);
+                            }
+        
+                            &::before,
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: -5px;
+                                left: -5px;
+                                background: #545453f5;
+                                z-index: -1;
+                                transition: clip-path 0.4s;
+                                width: 100%;
+                                height: 100%;
+                            }
+        
+                            &::after{
+                                top: 5px;
+                                left: 5px;
+                                background: #545453f5;
+                            }
+        
+                            &::before{
+                                clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                            }
+        
+                            &:hover::before{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 0 0 50px 0;
+                            }
+        
+                            &::after{
+                                clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                            }
+        
+                            &:hover::after{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 50px 0 0 0;
+                            }
+                                
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                 
                         }
                 }   
@@ -1050,7 +1101,7 @@ main{
                                     ul{
                                         display: flex;
                                         flex-flow: row wrap;
-                                        margin: 200px 0px 10px 0px;
+                                        margin: 150px 0px 10px 0px;
                                         padding: 0px;
                                         list-style: none;
                                         text-decoration: none;
@@ -1077,7 +1128,7 @@ main{
                             display: flex;
                             flex-flow: row wrap;
                             justify-content: center;
-                            margin-top: 180px;
+                            margin-top: 130px;
                             padding: 0px;
             
                                 a{   
