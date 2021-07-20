@@ -2351,9 +2351,11 @@ main{
             }    
         /*Contacto*/            
             #contacto{
-                    
+                    width: 300px;
+                    height: 620px;
+
                 .content{
-                    width: 330px ;
+                    width: 300px ;
                     margin: 0px;
                     padding: 0px;
 
@@ -2361,30 +2363,30 @@ main{
                         display: grid;
                         grid-template-columns: 1fr;
                         box-shadow: 0 0 5px 0 rgba(255,255,255, .3);
-                        padding: 1em;
+                        padding: 10px;
                         margin-bottom: 10px;
-                        width: 330px;
+                        width: 280px;
                         height: 620px;
 
                         .contact-form{
                             background: #222222;
                             margin: 0;
                             padding: 0.5em;
-                            width: 310px;
+                            width: 260px;
                             height: 340px;
                             display: grid;
                             grid-template-columns: 1fr;
 
                                 .text-center-title{
                                     height: 34px;
+                                    width: 250px;
                                     color: #f2f2f2;
                                     font-size: 2em;
                                 }
                                             
                                 .formulario{
-
                                     height: 300px;
-                                    width: 300px;
+                                    width: 250px;
 
                                     label{
                                         color: #fff;
@@ -2444,7 +2446,7 @@ main{
                                 margin: 0 0 45px 0;
                                 padding: 0 0 0 20px;
                                 height: 130px; 
-                                width: 290px;                   
+                                width: 250px;                   
                                     
                                     h4, ul, p{
                                         text-align: center;
