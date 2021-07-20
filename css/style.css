@@ -149,6 +149,129 @@ header .navbar .btn button:hover {
 /*Main*/
 main {
   /*Trabajos*/
+  /*  #porfolio{
+          height: 700px;
+          margin-bottom: 200px;
+
+          .title2{
+              color: #DE9D37;
+              align-items: center;
+              font-size: 40px;
+              font-family: "sansBold";
+              display: flex;
+              justify-content: center;
+              margin-top: 60px;
+              margin-bottom: 40px;
+          }
+
+          .content-all{
+              width: 50px;
+              perspective: 1000px;
+              position: relative;
+              margin-left: 10px;
+              margin-right: 0px;
+              padding-left: 280px;
+              padding-top: 100px;
+              margin-bottom: 750px;
+              right: 10px;
+
+              .content-carrousel{
+                  width: 50%;
+                  position: absolute;
+                  animation: rotar 10s infinite linear;
+                  transform-style: preserve-3d;
+
+                          &:hover{
+                              animation-play-state: paused;
+                              cursor: pointer;
+                          }
+
+                  figure{
+                      height: 320px;
+                      width: 250px;
+                      overflow: hidden;
+                      position: absolute;
+
+                          &:nth-child(1){ transform: rotateY(0deg)
+                              translateZ(150px)}
+
+                          &:nth-child(2){ transform: rotateY(120deg)
+                              translateZ(150px);}
+
+                          &:nth-child(3){ transform: rotateY(240deg)
+                              translateZ(150px);}
+
+                          &:nth-child(4){ transform: rotateY(360deg)
+                              translateZ(150px); 
+
+                      .content-carrousel img{
+                          width: 100%;
+                      }    
+
+                  }   
+
+                  @keyframes rotar {
+                      from{
+                          transform: rotateY(0deg);
+                      }to{
+                          transform: rotateY(360deg);
+                      }
+                  }
+
+              }
+
+          } 
+
+          .accordion{
+              width: 400px;
+              height: 300px;
+              position: relative;
+              top: 150px;
+              left: 700px;
+              right: 0px;
+
+              .accordion-body{
+                  background: transparent;
+                  color: white;
+                  border-radius: 10px;
+                  margin-top: 8px;
+              }
+
+              .accordion-item{
+                  background-color: transparent;
+                  padding: 8px 0px;
+              }
+
+              .accordion-collapse{
+                  background-color: transparent;
+                  color: #000000;
+                  border-radius: 10px;
+                  font-size: 13px;
+              }
+
+              code{
+                  font-weight: 500;
+                  color: #B69121;
+              }
+
+              .accordion-button{
+                  background-color:  #000000b1;
+                  border-radius: 10px;
+                  color: #DE9D37;
+                  font-size: 15px;
+              }
+
+              .collapsed{
+                  color: #01bad9;
+                  background-color: #161623;
+                  border-radius: 10px;
+                  font-size: 15px;
+              }
+
+          }
+
+      }
+  } */
   /*Contacto*/
 }
 main #presentacion {
@@ -243,8 +366,7 @@ main #presentacion .card .text {
   font-weight: 500;
 }
 main #porfolio {
-  height: 700px;
-  margin-bottom: 200px;
+  height: 900px;
 }
 main #porfolio .title2 {
   color: #DE9D37;
@@ -257,20 +379,18 @@ main #porfolio .title2 {
   margin-bottom: 40px;
 }
 main #porfolio .content-all {
-  width: 50px;
-  perspective: 1000px;
+  width: 170px;
+  left: 0px;
+  right: 0px;
+  margin: 0 0 750px 120px;
+  perspective: 5000px;
   position: relative;
-  margin-left: 10px;
-  margin-right: 0px;
-  padding-left: 280px;
-  padding-top: 100px;
-  margin-bottom: 750px;
-  right: 10px;
+  padding: 100px 0 0 150px;
 }
 main #porfolio .content-all .content-carrousel {
-  width: 50%;
+  width: 100%;
   position: absolute;
-  animation: rotar 10s infinite linear;
+  animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
 }
 main #porfolio .content-all .content-carrousel:hover {
@@ -284,18 +404,21 @@ main #porfolio .content-all .content-carrousel figure {
   position: absolute;
 }
 main #porfolio .content-all .content-carrousel figure:nth-child(1) {
-  transform: rotateY(0deg) translateZ(150px);
+  transform: rotateY(0deg) translateZ(300px);
 }
 main #porfolio .content-all .content-carrousel figure:nth-child(2) {
-  transform: rotateY(120deg) translateZ(150px);
+  transform: rotateY(72deg) translateZ(300px);
 }
 main #porfolio .content-all .content-carrousel figure:nth-child(3) {
-  transform: rotateY(240deg) translateZ(150px);
+  transform: rotateY(144deg) translateZ(300px);
 }
 main #porfolio .content-all .content-carrousel figure:nth-child(4) {
-  transform: rotateY(360deg) translateZ(150px);
+  transform: rotateY(216deg) translateZ(300px);
 }
-main #porfolio .content-all .content-carrousel figure:nth-child(4) .content-carrousel img {
+main #porfolio .content-all .content-carrousel figure:nth-child(5) {
+  transform: rotateY(288deg) translateZ(300px);
+}
+main #porfolio .content-all .content-carrousel figure .content-carrousel img {
   width: 100%;
 }
 @keyframes rotar {
@@ -306,45 +429,48 @@ main #porfolio .content-all .content-carrousel figure:nth-child(4) .content-carr
     transform: rotateY(360deg);
   }
 }
-main #porfolio .content-all .accordion {
-  width: 400px;
+main #porfolio .accordion {
+  width: 450px;
   height: 300px;
   position: relative;
   top: 150px;
   left: 700px;
+  bottom: 0px;
   right: 0px;
+  padding: 0px;
+  margin: 0 0 0 12px;
 }
-main #porfolio .content-all .accordion .accordion-body {
+main #porfolio .accordion .accordion-body {
   background: transparent;
   color: white;
   border-radius: 10px;
   margin-top: 8px;
+  font-size: 1.3rem;
 }
-main #porfolio .content-all .accordion .accordion-item {
+main #porfolio .accordion .accordion-item {
   background-color: transparent;
-  padding: 8px 0px;
+  padding-bottom: 5px;
 }
-main #porfolio .content-all .accordion .accordion-collapse {
+main #porfolio .accordion .accordion-collapse {
   background-color: transparent;
   color: #000000;
   border-radius: 10px;
-  font-size: 13px;
 }
-main #porfolio .content-all .accordion code {
+main #porfolio .accordion code {
   font-weight: 500;
   color: #B69121;
 }
-main #porfolio .content-all .accordion .accordion-button {
+main #porfolio .accordion .accordion-button {
   background-color: #000000b1;
   border-radius: 10px;
   color: #DE9D37;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
-main #porfolio .content-all .accordion .collapsed {
+main #porfolio .accordion .collapsed {
   color: #01bad9;
   background-color: #161623;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 main #contacto {
   margin-bottom: 20px;
