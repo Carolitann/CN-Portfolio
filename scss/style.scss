@@ -282,134 +282,134 @@ main{
     }
 
 /*Trabajos*/
-    #porfolio{
-        height: 900px;
+#porfolio{
+    height: 900px;
 
-        .title2{
-            color: #DE9D37;
-            align-items: center;
-            font-size: 40px;
-            font-family: "sansBold";
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
-            margin-bottom: 40px;
+    .title2{
+        color: #DE9D37;
+        align-items: center;
+        font-size: 40px;
+        font-family: "sansBold";
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .content-all{
+        width: 170px;
+        left: 0px;
+        right: 0px;
+        margin: 0 0 750px 120px;
+        perspective: 5000px;
+        position: relative;
+        padding: 100px 0 0 150px;
+        
+
+        .content-carrousel{
+            width: 100%;
+            position: absolute;
+            animation: rotar 15s infinite linear;
+            transform-style: preserve-3d;
+        
+                    &:hover{
+                        animation-play-state: paused;
+                        cursor: pointer;
+                    }
+
+            figure{
+                height: 320px;
+                width: 250px;
+                overflow: hidden;
+                position: absolute;
+
+                    &:nth-child(1){ transform: rotateY(0deg)
+                        translateZ(300px)}
+
+                    &:nth-child(2){ transform: rotateY(72deg)
+                        translateZ(300px);}
+
+                    &:nth-child(3){ transform: rotateY(144deg)
+                        translateZ(300px);}
+
+                    &:nth-child(4){ transform: rotateY(216deg)
+                        translateZ(300px);}
+
+                    &:nth-child(5){ transform: rotateY(288deg)
+                        translateZ(300px);}    
+                
+                .content-carrousel img{
+                    width: 100%;
+                }    
+
+            }   
+            
+            @keyframes rotar {
+                from{
+                    transform: rotateY(0deg);
+                }to{
+                    transform: rotateY(360deg);
+                }
+            }
+
+
         }
 
-        .content-all{
-            width: 170px;
-            left: 0px;
-            right: 0px;
-            margin: 0 0 750px 120px;
-            perspective: 5000px;
-            position: relative;
-            padding: 100px 0 0 150px;
+    } 
+
+    .accordion{
+        width: 450px;
+        height: 300px;
+        position: relative;
+        top: 150px;
+        left: 700px;
+        bottom: 0px;
+        right: 0px;
+        padding: 0px;
+        margin: 0 0 0 12px;
+
+        .accordion-body{
+            background: transparent;
+            color: white;
+            border-radius: 10px;
+            margin-top: 8px;
+            font-size: 1.3rem
+        }
+
+        .accordion-item{
+            background-color: transparent;
+            padding-bottom: 5px;
+        }
+
+        .accordion-collapse{
+            background-color: transparent;
+            color: #000000;
+            border-radius: 10px;
             
+        }
 
-            .content-carrousel{
-                width: 100%;
-                position: absolute;
-                animation: rotar 15s infinite linear;
-                transform-style: preserve-3d;
-            
-                        &:hover{
-                            animation-play-state: paused;
-                            cursor: pointer;
-                        }
+        code{
+            font-weight: 500;
+            color: #B69121;
+        }
 
-                figure{
-                    height: 320px;
-                    width: 250px;
-                    overflow: hidden;
-                    position: absolute;
+        .accordion-button{
+            background-color:  #000000b1;
+            border-radius: 10px;
+            color: #DE9D37;
+            font-size: 1.5rem;
+        }
 
-                        &:nth-child(1){ transform: rotateY(0deg)
-                            translateZ(300px)}
-
-                        &:nth-child(2){ transform: rotateY(72deg)
-                            translateZ(300px);}
-
-                        &:nth-child(3){ transform: rotateY(144deg)
-                            translateZ(300px);}
-
-                        &:nth-child(4){ transform: rotateY(216deg)
-                            translateZ(300px);}
-
-                        &:nth-child(5){ transform: rotateY(288deg)
-                            translateZ(300px);}    
-                    
-                    .content-carrousel img{
-                        width: 100%;
-                    }    
-
-                }   
-                
-                @keyframes rotar {
-                    from{
-                        transform: rotateY(0deg);
-                    }to{
-                        transform: rotateY(360deg);
-                    }
-                }
-
-
-            }
-
-        } 
-
-        .accordion{
-            width: 450px;
-            height: 300px;
-            position: relative;
-            top: 150px;
-            left: 700px;
-            bottom: 0px;
-            right: 0px;
-            padding: 0px;
-            margin: 0 0 0 12px;
-
-            .accordion-body{
-                background: transparent;
-                color: white;
-                border-radius: 10px;
-                margin-top: 8px;
-                font-size: 1.3rem
-            }
-
-            .accordion-item{
-                background-color: transparent;
-                padding-bottom: 5px;
-            }
-
-            .accordion-collapse{
-                background-color: transparent;
-                color: #000000;
-                border-radius: 10px;
-                
-            }
-
-            code{
-                font-weight: 500;
-                color: #B69121;
-            }
-
-            .accordion-button{
-                background-color:  #000000b1;
-                border-radius: 10px;
-                color: #DE9D37;
-                font-size: 1.5rem;
-            }
-
-            .collapsed{
-                color: #01bad9;
-                background-color: #161623;
-                border-radius: 10px;
-                font-size: 1.5rem;
-            }
-
+        .collapsed{
+            color: #01bad9;
+            background-color: #161623;
+            border-radius: 10px;
+            font-size: 1.5rem;
         }
 
     }
+
+}
 
 /*Contacto*/
     #contacto{
