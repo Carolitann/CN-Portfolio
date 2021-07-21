@@ -242,9 +242,12 @@ main #presentacion .card .anim-typewriter {
 main #presentacion .card .text {
   color: beige;
   text-indent: 1em;
-  line-height: 190%;
-  font-size: 1.3rem;
+  line-height: 230%;
+  font-size: 1.4rem;
   font-weight: 500;
+}
+main #presentacion .card .text::first-letter {
+  color: #B69121;
 }
 main #porfolio {
   height: 900px;
