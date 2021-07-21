@@ -1,0 +1,58 @@
+@import '../base/variables';
+
+*{
+    margin: $pixel0;
+    padding: $pixel0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "sansBold";
+    src: url(/fontFamily/DM_Sans/DMSans-Bold.ttf) format("ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "sansItalic";
+    src: url(/fontFamily/DM_Sans/DMSans-Medium.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "sansBoldItalic";
+    src: url(/fontFamily/DM_Sans/DMSans-BoldItalic.ttf) format("ttf");
+    font-display: swap;
+}
+
+/*BODY*/
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: $colorBlack;
+}
+
+body::before,
+body::after{
+    content: '';
+    position: $positionAb;
+    left: $pixel0;
+    top: $pixel0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.4;
+}
+
+body::before{
+    clip-path: circle(30% at left 20%);
+    background: linear-gradient(135deg, $colorGolden 100%, $colorGolden 100%);
+}
+
+body::after{
+    clip-path: circle(18% at right 70%);
+    background: linear-gradient(135deg, $colorGolden 10%, $colorGolden 100%);
+}

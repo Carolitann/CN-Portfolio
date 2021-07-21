@@ -1,0 +1,126 @@
+@import '../base/variables';
+
+/*Footer*/
+#footer{
+    margin-top: 50px;
+    height: 200px;
+
+        .menu-pie{
+            background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#171717,$colorBlack);
+
+            .row{
+                padding-bottom: 35px;
+            
+                .pie{
+
+                        ul{
+                            display: $df;
+                            flex-flow: row wrap;
+                            justify-content: $ai;
+                            margin-top: 150px;
+                            list-style: $styleNo;
+                            text-decoration: $styleNo;
+                        }
+                            li{
+
+                                    a{
+                                        font-size: 15px;
+                                        text-transform: uppercase;
+                                        padding: 1.5rem;
+                                        color: $colorWhite;
+                                        text-decoration: $styleNo;
+                                        
+                                            &:hover{
+                                                color: $colorWhite; 
+                                                font-weight: 200;
+                                            }
+                                                i{
+                                                color:#b6912199;   
+                                                padding-right: 8px; 
+                                                }
+                                    }
+                            }
+                }
+
+                #social{
+                    flex: auto;
+                    display: $df;
+                    flex-flow: row wrap;
+                    justify-content: $ai;
+                    margin-top: 130px;
+                    position: $positionRe;
+                    z-index: 10;
+                    width: 44px;
+                    height: 50px;
+                    
+
+                        a{   
+                            width: 44px;
+                            height: 50px;
+                            margin-left: 15px;
+                            color:#b6912199;
+                            backdrop-filter: blur(15px);
+                            transition: color .4s;
+                            
+                            &:hover{
+                                color: rgba(255, 255, 255);
+                            }
+        
+                            &::before,
+                            &::after{
+                                content: '';
+                                position: $positionAb;
+                                top: -5px;
+                                left: -5px;
+                                background: #545453f5;
+                                z-index: -1;
+                                transition: clip-path 0.4s;
+                                width: 100%;
+                                height: 100%;
+                            }
+        
+                            &::after{
+                                top: 5px;
+                                left: 5px;
+                                background: #545453f5;
+                            }
+        
+                            &::before{
+                                clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                            }
+        
+                            &:hover::before{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 0 0 50px 0;
+                            }
+        
+                            &::after{
+                                clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                            }
+        
+                            &:hover::after{
+                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                border-radius: 50px 0 0 0;
+                            }
+                                
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
+                                
+                        }
+                }   
+            }
+            .copy{
+                background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,$colorBlack);
+                color: #6C757D;
+                height: 50px;
+                font-weight: 600;
+                font-size: 1.5rem;
+                padding-top: 10px;
+                text-align: $ai;
+            }   
+        }
+
+}

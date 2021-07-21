@@ -1,6 +1,7 @@
+/*Variables generales*/
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -27,15 +28,15 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background: #000;
+  background: black;
 }
 
 body::before,
 body::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   height: 100vh;
   width: 100%;
   opacity: 0.4;
@@ -51,6 +52,7 @@ body::after {
   background: linear-gradient(135deg, #B69121 10%, #B69121 100%);
 }
 
+/*Variables generales*/
 /*HEADER*/
 header {
   height: 90vh;
@@ -107,9 +109,9 @@ header .navbar .menu li .link {
 header .navbar .menu li .hover-2:after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   width: 100%;
   height: 3px;
   transform: scaleX(0);
@@ -146,6 +148,7 @@ header .navbar .btn button:hover {
   transform: scale(0.97);
 }
 
+/*Variables generales*/
 /*Main*/
 main {
   /*Presentacion*/
@@ -157,8 +160,8 @@ main #presentacion {
 }
 main #presentacion .row {
   width: 700px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0px auto;
+  padding: 0px;
 }
 main #presentacion .card {
   display: inline-block;
@@ -222,7 +225,7 @@ main #presentacion .card .anim-typewriter {
 }
 @keyframes typewriter {
   from {
-    width: 0;
+    width: 0px;
   }
   to {
     width: 6.5em;
@@ -320,7 +323,7 @@ main #porfolio .accordion {
 }
 main #porfolio .accordion .accordion-body {
   background: transparent;
-  color: white;
+  color: #fff;
   border-radius: 10px;
   margin-top: 8px;
   font-size: 1.3rem;
@@ -331,7 +334,7 @@ main #porfolio .accordion .accordion-item {
 }
 main #porfolio .accordion .accordion-collapse {
   background-color: transparent;
-  color: #000000;
+  color: black;
   border-radius: 10px;
 }
 main #porfolio .accordion code {
@@ -394,7 +397,7 @@ main #contacto .content .contact-wrapper .contact-form .formulario textarea {
   height: 80px;
   border: none;
   background: none;
-  outline: 0;
+  outline: 0px;
   color: #fff;
   border-bottom: 1px solid #DE9D37;
 }
@@ -403,7 +406,7 @@ main #contacto .content .contact-wrapper .contact-form .formulario .name {
   height: 30px;
   border: none;
   background: none;
-  outline: 0;
+  outline: 0px;
   color: #fff;
   border-bottom: 1px solid #DE9D37;
 }
@@ -412,7 +415,7 @@ main #contacto .content .contact-wrapper .contact-form .formulario .mail {
   height: 30px;
   border: none;
   background: none;
-  outline: 0;
+  outline: 0px;
   color: #fff;
   border-bottom: 1px solid #DE9D37;
 }
@@ -423,8 +426,8 @@ main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar
   margin: 30px 0 10px 0;
   padding: 5px;
   background: #b69121a8;
-  color: #000;
-  border: 0;
+  color: black;
+  border: 0px;
   text-transform: uppercase;
   padding: 0.5em;
   font-size: 16px;
@@ -433,10 +436,10 @@ main #contacto .content .contact-wrapper .contact-form .formulario .boton-enviar
   background: #B69121;
   color: #fff;
   transition: background-color 1s ease-in-out;
-  outline: 0;
+  outline: 0px;
 }
 main #contacto .content .contact-wrapper .contact-info {
-  background: #000;
+  background: black;
   width: 410px;
   margin: 35px 65px 35px 25px;
   padding: 15px;
@@ -471,13 +474,14 @@ main #contacto .content .contact-wrapper .contact-info i {
   padding: 2%;
 }
 
+/*Variables generales*/
 /*Footer*/
 #footer {
   margin-top: 50px;
   height: 200px;
 }
 #footer .menu-pie {
-  background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+  background-image: linear-gradient(to right, black, #171717, #171717, #171717, black);
 }
 #footer .menu-pie .row {
   padding-bottom: 35px;
@@ -563,7 +567,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   font-size: 5rem;
 }
 #footer .menu-pie .copy {
-  background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+  background-image: linear-gradient(to right, black, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, black);
   color: #6C757D;
   height: 50px;
   font-weight: 600;
