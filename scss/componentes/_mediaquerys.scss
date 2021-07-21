@@ -35,7 +35,7 @@
             .row{
                 width: 100%;
                 max-width: 45rem;
-                margin: 0 auto;
+                margin: $pixel0 auto;
                 padding: 2.5rem 0;
             }
     
@@ -43,40 +43,40 @@
                 display: inline-block;
                 width: 100%;
                 padding: 2rem 1rem 4.5rem 1rem;
-                margin-right: 0px;
+                margin-right: $pixel0;
                 top: 100px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
-                position: relative;
+                position: $positionRe;
     
                     &::after{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         background-color: skyblue;
-                        top: 0px;
-                        right: 0px;
+                        top: $pixel0;
+                        right: $pixel0;
                         border-bottom: 20px solid darken(#01bad9, 5%);
                         border-left: 20px solid darken(#01bad9, 5%);
                         border-right: 20px solid #00edfe32;
                         border-top: 20px solid #00edfe32;
-                        position: absolute;
+                        position: $positionAb;
                         filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
                     }  
     
                     &::before{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         border-top: 40px solid darken(#cf2bd0, 5%);
                         border-right: 40px solid darken(#cf2bd0, 5%);
                         border-left: 40px solid  #d02bd040;
                         border-bottom: 40px solid  #d02bd040;
-                        bottom: 0px;
-                        left: 0px;
-                        position: absolute;
+                        bottom: $pixel0;
+                        left: $pixel0;
+                        position: $positionAb;
                         filter: drop-shadow(5px -5px 5px rgba(0,0,0,0.5));
                         margin-right: 10%;
                     }
@@ -86,9 +86,9 @@
                     }
     
                     .line{
-                        position: relative;
-                        top: 0px;
-                        color: #DE9D37;
+                        position: $positionRe;
+                        top: $pixel0;
+                        color: $colorGolden2;
                         width: 16em;
                         margin: auto;
                         border-right: 2px solid rgba(255,255,255,0.75);
@@ -106,7 +106,7 @@
                         
                     @keyframes typewriter{
                         from{
-                            width: 0;
+                            width: $pixel0;
                         }
                         to{
                             width: 6.5em;
@@ -136,29 +136,29 @@
             height: 900px;
     
             .title2{
-                color: #DE9D37;
-                align-items: center;
+                color: $colorGolden2;
                 font-size: 40px;
                 font-family: "sansBold";
-                display: flex;
-                justify-content: center;
+                display: $df;
+                justify-content: $ai;
+                align-items: $ai;
                 margin-top: 60px;
                 margin-bottom: 40px;
             }
     
             .content-all{
                 width: 170px;
-                left: 0px;
-                right: 0px;
+                left: $pixel0;
+                right: $pixel0;
                 margin: 0 0 750px 100px;
                 perspective: 5000px;
-                position: relative;
+                position: $positionRe;
                 padding: 100px 0 0 150px;
                 
     
                 .content-carrousel{
                     width: 100%;
-                    position: absolute;
+                    position: $positionAb;
                     animation: rotar 15s infinite linear;
                     transform-style: preserve-3d;
                 
@@ -171,7 +171,7 @@
                         height: 320px;
                         width: 250px;
                         overflow: hidden;
-                        position: absolute;
+                        position: $positionAb;
     
                             &:nth-child(1){ transform: rotateY(0deg)
                                 translateZ(300px)}
@@ -209,17 +209,17 @@
             .accordion{
                 width: 450px;
                 height: 300px;
-                position: relative;
+                position:$positionRe;
                 top: 600px;
                 left: -120px;
                 bottom: 150px;
-                right: 0px;
-                padding: 0px;
+                right: $pixel0;
+                padding:$pixel0;
                 margin: 0 0 0 12px;
     
                 .accordion-body{
                     background: transparent;
-                    color: white;
+                    color: $colorWhite2;
                     border-radius: 10px;
                     margin-top: 8px;
                 }
@@ -231,20 +231,20 @@
     
                 .accordion-collapse{
                     background-color: transparent;
-                    color: #000000;
+                    color: $colorBlack;
                     border-radius: 10px;
                     
                 }
     
                 code{
                     font-weight: 500;
-                    color: #B69121;
+                    color: $colorGolden;
                 }
     
                 .accordion-button{
                     background-color:  #000000b1;
                     border-radius: 10px;
-                    color: #DE9D37;
+                    color: $colorGolden2;
                 }
     
                 .collapsed{
@@ -264,8 +264,8 @@
 
             .content{
                 width: 740px;
-                margin: 0px;
-                padding: 0px;
+                margin: $pixel0;
+                padding: $pixel0;
 
                     .contact-wrapper{
                         display: grid;
@@ -274,14 +274,14 @@
                         padding: 10px 0px;
                         height: 440px;
                         width: 700px;
-                        margin: 0 0 10px 15px;
+                        margin: 0 0 10px 25px;
 
                             .contact-form{
                                 background: #222222;
                                 margin: 25px 0px 0px 10px;
                                 padding: 12px;
-                                height: 370px;
-                                width: 324px;
+                                height: 364px;
+                                width: 300px;
                                 display: grid;
                                 grid-template-columns: 1fr;
 
@@ -295,7 +295,7 @@
                                             height: 300px;
 
                                                 label{
-                                                    color: #fff;
+                                                    color: $colorWhite2;
                                                     padding-top: 8px;
                                                     font-size: 12px;
                                                 }
@@ -303,31 +303,31 @@
                                                 textarea{
                                                     width: 100%;
                                                     height: 80px;
-                                                    border: none;
-                                                    background: none;
-                                                    outline: 0;
-                                                    color: #fff;
-                                                    border-bottom: 1px solid #DE9D37; 
+                                                    border: $styleNo;
+                                                    background: $styleNo;
+                                                    outline: $pixel0;
+                                                    color: $colorWhite2;
+                                                    border-bottom: 1px solid $colorGolden2; 
                                                 }   
             
                                                 .name{
                                                     width: 100%;
                                                     height: 30px;
-                                                    border: none;
-                                                    background: none;
-                                                    outline: 0;
-                                                    color: #fff;
-                                                    border-bottom: 1px solid #DE9D37;    
+                                                    border: $styleNo;
+                                                    background: $styleNo;
+                                                    outline: $pixel0;
+                                                    color: $colorWhite2;
+                                                    border-bottom: 1px solid $colorGolden2;    
                                                 }
             
                                                 .mail{
                                                     width: 100%;
                                                     height: 30px;
-                                                    border: none;
-                                                    background: none;
-                                                    outline: 0;
-                                                    color: #fff;
-                                                    border-bottom: 1px solid #DE9D37;
+                                                    border: $styleNo;
+                                                    background: $styleNo;
+                                                    outline: $pixel0;
+                                                    color: $colorWhite2;
+                                                    border-bottom: 1px solid $colorGolden2;
                                                 }
             
                                                 .boton-enviar{
@@ -337,17 +337,17 @@
                                                     margin: 30px 0 10px 0;
                                                     padding: 5px;
                                                     background: #b69121a8;
-                                                    color: #000;
-                                                    border: 0;
+                                                    color: $colorBlack;
+                                                    border: $pixel0;
                                                     text-transform: uppercase;
                                                     padding: 0.5em;
                                                     font-size: 16px;
                 
                                                         &:hover, &:focus{
-                                                            background: #B69121;
-                                                            color: #fff;
+                                                            background: $colorGolden;
+                                                            color: $colorWhite2;
                                                             transition: background-color 1s ease-in-out ;
-                                                            outline: 0;
+                                                            outline: $pixel0;
                                                         }
             
                                                 }
@@ -357,27 +357,31 @@
                             }
 
                             .contact-info{
-                                background: #000;
+                                background: $colorBlack;
                                 width: 350px;
-                                margin: 35px 40px 35px 0;
+                                margin: 35px 8px 35px 0;
                                 padding: 10px 0 0 0;
 
-                                    h4, ul, p{
-                                        text-align: center;
+                                    p{
+                                        text-align: $ai;
                                         margin: 0 0 1rem 0;
                                         color: #474c51
                                     }
 
                                     h4{
                                         font-size: 1.5em;
-                                        text-align: center;
+                                        text-align: $ai;
                                         margin-left: 12px;
+                                        color: #474c51
                                     }
 
                                     ul{
-                                        padding: 0;
+                                        padding: $pixel0;
+                                        text-align: $ai;
+                                        margin: 0 0 1rem 0;
                                         width: 350px;
-                                        list-style: none;
+                                        list-style: $styleNo;
+                                        color: #474c51
                                     }
 
                                     li{
@@ -410,22 +414,22 @@
         margin-top: 50px;
     
             .menu-pie{
-                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#171717,$colorBlack);
                 height: 60vh;
                     
                     .row{
                         height: 410px;
 
                             .pie{
-                                padding: 0px;
+                                padding: $pixel0;
 
                                     ul{
-                                        display: flex;
+                                        display: $df;
                                         flex-flow: row wrap;
-                                        margin: 150px 0px 10px 0px;
-                                        padding: 0px;
-                                        list-style: none;
-                                        text-decoration: none;
+                                        margin: 200px 0px 10px 0px;
+                                        padding: $pixel0;
+                                        list-style: $styleNo;
+                                        text-decoration: $styleNo;
                                     
                                         li{
                 
@@ -433,8 +437,8 @@
                                                 font-size: 15px;
                                                 text-transform: uppercase;
                                                 padding: 15px 0 15px 15px;
-                                                color: #ffffff;
-                                                text-decoration: none;
+                                                color: $colorWhite;
+                                                text-decoration: $styleNo;
                                                     
                                                     i{
                                                     color:#b6912199;   
@@ -445,15 +449,62 @@
                             }
             
                         #social{
+                            height: 60px;
+                            display: $df;
                             flex: auto;
-                            display: flex;
                             flex-flow: row wrap;
-                            justify-content: center;
-                            margin-top: 130px;
-                            padding: 0px;
+                            justify-content: $ai;
+                            margin-top: 180px;
+                            padding: $pixel0;
             
                                 a{   
-                                    padding: 1rem;
+                                    width: 44px;
+                                    height: 50px;
+                                    margin-left: 15px;
+                                    color:#b6912199;
+                                    backdrop-filter: blur(15px);
+                                    transition: color .4s;
+
+                                    &:hover{
+                                        color: rgba(255, 255, 255);
+                                    }
+                
+                                    &::before,
+                                    &::after{
+                                        content: '';
+                                        position: $positionAb;
+                                        top: -5px;
+                                        left: -5px;
+                                        background: #545453f5;
+                                        z-index: -1;
+                                        transition: clip-path 0.4s;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                
+                                    &::after{
+                                        top: 5px;
+                                        left: 5px;
+                                        background: #545453f5;
+                                    }
+                
+                                    &::before{
+                                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                                    }
+                
+                                    &:hover::before{
+                                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                        border-radius: 0 0 50px 0;
+                                    }
+                
+                                    &::after{
+                                        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                                    }
+                
+                                    &:hover::after{
+                                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                        border-radius: 50px 0 0 0;
+                                    }
                                     
                                     .icono{
                                         color: #b6912199;
@@ -467,13 +518,13 @@
             
     
                     .copy{
-                        background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+                        background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,$colorBlack);
                         color: #6C757D;
                         height: 50px;
                         font-weight: 600;
                         font-size: 1.5rem;
                         padding-top: 10px;
-                        text-align: center;
+                        text-align: $ai;
                     
                     }   
             }        
@@ -487,21 +538,21 @@
         width: 93%;
 
         .navbar{
-            display: flex;
+            display: $df;
             flex-direction: column;
             flex-wrap: nowrap;
 
                 .menu{
                     margin: 10px 0 20px 0;
                     padding: 0 10px;
-                    display: flex;
+                    display: $df;
                     flex-direction: column;
                     flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+                    justify-content: $ai;
+                    align-items: $ai;
+                    align-content: $ai;
                     flex: 1 1 auto;
-                    align-self: center;
+                    align-self: $ai;
                 }
 
             .btn {
@@ -509,14 +560,14 @@
                 padding: 5px 6px;
                 border: 1px;
                 margin: 0px 8px; 
-                display: flex;
+                display: $df;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
+                justify-content: $ai;
+                align-items: $ai;
+                align-content: $ai;
                 flex: 1 1 auto;
-                align-self: center;    
+                align-self: $ai;    
             } 
 
         }
@@ -531,7 +582,7 @@
             .row{
                 width: 100%;
                 max-width: 45rem;
-                margin: 0 auto;
+                margin: $pixel0 auto;
                 padding: 2.5rem 0;
             }
     
@@ -540,40 +591,40 @@
                 width: 100%;
                 height: 550px;
                 padding: 2rem 1rem 4.5rem 1rem;
-                margin-right: 0px;
+                margin-right: $pixel0;
                 top: 100px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
-                position: relative;
+                position: $positionRe;
     
                     &::after{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         background-color: skyblue;
-                        top: 0px;
-                        right: 0px;
+                        top: $pixel0;
+                        right: $pixel0;
                         border-bottom: 20px solid darken(#01bad9, 5%);
                         border-left: 20px solid darken(#01bad9, 5%);
                         border-right: 20px solid #00edfe32;
                         border-top: 20px solid #00edfe32;
-                        position: absolute;
+                        position: $positionAb;
                         filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
                     }  
     
                     &::before{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         border-top: 40px solid darken(#cf2bd0, 5%);
                         border-right: 40px solid darken(#cf2bd0, 5%);
                         border-left: 40px solid  #d02bd040;
                         border-bottom: 40px solid  #d02bd040;
-                        bottom: 0px;
-                        left: 0px;
-                        position: absolute;
+                        bottom: $pixel0;
+                        left: $pixel0;
+                        position: $positionAb;
                         filter: drop-shadow(5px -5px 5px rgba(0,0,0,0.5));
                         margin-right: 10%;
                     }
@@ -583,9 +634,9 @@
                     }
     
                     .line{
-                        position: relative;
-                        top: 0px;
-                        color: #DE9D37;
+                        position: $positionRe;
+                        top: $pixel0;
+                        color: $colorGolden2;
                         width: 16em;
                         margin: auto;
                         border-right: 2px solid rgba(255,255,255,0.75);
@@ -603,7 +654,7 @@
                         
                     @keyframes typewriter{
                         from{
-                            width: 0;
+                            width: $pixel0;
                         }
                         to{
                             width: 6.5em;
@@ -633,12 +684,12 @@
             height: 850%;
     
             .title2{
-                color: #DE9D37;
-                align-items: center;
+                color: $colorGolden2;
                 font-size: 40px;
                 font-family: "sansBold";
-                display: flex;
-                justify-content: center;
+                display: $df;
+                justify-content: $ai;
+                align-items: $ai;
                 margin-top: 60px;
                 margin-bottom: 40px;
             }
@@ -647,17 +698,17 @@
                 width: 100px;
                 margin: auto;
                 perspective: 5000px;
-                position: relative;
-                margin-left: 0px;
-                margin-right: 0px;
-                padding-left: 0px;
+                position: $positionRe;
+                margin-left: $pixel0;
+                margin-right: $pixel0;
+                padding-left:$pixel0;
                 padding-top: 100px;
                 margin-bottom: 750px;
-                right: 0px;
+                right: $pixel0;
     
                 .content-carrousel{
                     width: 100%;
-                    position: relative;
+                    position: $positionRe;
                     animation: rotar 10s infinite linear;
                     transform-style: preserve-3d;
                 
@@ -670,7 +721,7 @@
                         height: 320px;
                         width: 250px;
                         overflow: hidden;
-                        position: absolute;
+                        position: $positionAb;
     
                             &:nth-child(1){ transform: rotateY(0deg)
                                 translateZ(300px)}
@@ -708,43 +759,43 @@
             .accordion{
                 width: 350px;
                 height: 300px;
-                position: relative;
+                position: $positionRe;
                 top: -160px;
-                left: 0px;
+                left: $pixel0;
                 bottom: 150px;
-                right: 0px;
-                padding: 0px;
+                right: $pixel0;
+                padding: $pixel0;
                 margin: 0 0 0 12px;
     
                 .accordion-body{
                     background: transparent;
-                    color: white;
+                    color: $colorWhite2;
                     border-radius: 10px;
                     margin-top: 8px;
                 }
     
                 .accordion-item{
                     background-color: transparent;
-                    padding: 8px 0px;
+                    padding: 8px $pixel0;
     
                 }
     
                 .accordion-collapse{
                     background-color: transparent;
-                    color: #000000;
+                    color: $colorBlack;
                     border-radius: 10px;
                     font-size: 13px;
                 }
     
                 code{
                     font-weight: 500;
-                    color: #B69121;
+                    color: $colorGolden;
                 }
     
                 .accordion-button{
                     background-color:  #000000b1;
                     border-radius: 10px;
-                    color: #DE9D37;
+                    color: $colorGolden2;
                     font-size: 15px;
                 }
     
@@ -760,15 +811,15 @@
         }    
     /*Contacto*/
         #contacto{
-            padding: 0px;
+            padding: $pixel0;
             width: 370px;
-            margin-right: 0px;
+            margin-right: $pixel0;
 
                 .content{
-                    margin-left: 0px;
-                    margin-right: 0px;
-                    padding-left: 0px;
-                    padding-right: 0px;
+                    margin-left: $pixel0;
+                    margin-right: $pixel0;
+                    padding-left: $pixel0;
+                    padding-right: $pixel0;
                     width: 370px;
 
                     .contact-wrapper{
@@ -778,13 +829,13 @@
                         padding-right: 15px;
                         padding-left: 10px;
                         margin-bottom: 10px;
-                        margin-right: 0px;
+                        margin-right: $pixel0;
                         width: 360px;
                         height: 540px;
     
                             .contact-form{
                                 background: #222222;
-                                margin: 0;
+                                margin: $pixel0;
                                 padding: 0.5em;
                                 width: 340px;
                                 height: 330px;
@@ -800,33 +851,33 @@
                                     .formulario{
 
                                         label{
-                                            color: #fff;
+                                            color: $colorWhite2;
                                             padding-top: 2px;
                                         }
 
                                         textarea{
-                                            padding:0px;
+                                            padding:$pixel0;
                                             height: 100px;
                                         }   
 
                                         .name{
                                             width: 100%;
                                             padding: 1px;
-                                            border: none;
-                                            background: none;
-                                            outline: 0;
-                                            color: #fff;
-                                            border-bottom: 1px solid #DE9D37;    
+                                            border: $styleNo;
+                                            background: $styleNo;
+                                            outline: $pixel0;
+                                            color: $colorWhite2;
+                                            border-bottom: 1px solid $colorGolden2;    
                                         }
 
                                         .mail{
                                             width: 100%;
                                             padding: 1px;
-                                            border: none;
-                                            background: none;
-                                            outline: 0;
-                                            color: #fff;
-                                            border-bottom: 1px solid #DE9D37;
+                                            border: $styleNo;
+                                            background: $styleNo;
+                                            outline: $pixel0;
+                                            color: $colorWhite2;
+                                            border-bottom: 1px solid $colorGolden2;
                                         }
 
                                         .boton-enviar{
@@ -834,16 +885,16 @@
                                             height: 46px;
                                             margin-top: 10px;
                                             background: #b69121a8;
-                                            color: #000;
-                                            border: 0;
+                                            color: $colorBlack;
+                                            border: $pixel0;
                                             text-transform: uppercase;
                                             padding: 0.5em;
         
                                                 &:hover, &:focus{
-                                                    background: #B69121;
-                                                    color: #fff;
+                                                    background: $colorGolden;
+                                                    color: $colorWhite2;
                                                     transition: background-color 1s ease-in-out ;
-                                                    outline: 0;
+                                                    outline: $pixel0;
                                                 }
     
                                         }
@@ -853,20 +904,20 @@
                             }
 
                                     .contact-info{
-                                        background: #000;
+                                        background: $colorBlack;
                                         width: 350px;
                                         margin: 5px 0px 0px 0px;
-                                        padding: 0px;
+                                        padding: $pixel0;
                                         
                                             h4, ul, p{
-                                                text-align: center;
+                                                text-align: $ai;
                                                 margin: 0 0 1rem 0;
                                                 
                                             }
     
                                             ul{
                                                 padding: 0.5em;
-                                                list-style: none;
+                                                list-style: $styleNo;
                                             }
     
                                             li{
@@ -891,29 +942,29 @@
         width: 380px;
     
             .menu-pie{
-                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#171717,$colorBlack);
                 height: 380px;
-                padding: 0px;
+                padding: $pixel0;
                 width: 380px;
-                margin-left:0px ;
-                margin-right: 0px;
+                margin-left:$pixel0 ;
+                margin-right: $pixel0;
     
                 .row{   
-                    margin: 0px;
+                    margin: $pixel0;
                     width: 380px;
                     height: 330px;
-                    padding-bottom: 0px;
+                    padding-bottom: $pixel0;
                 
                     .pie{
                         width: 380px;
-                        padding: 0px;
+                        padding: $pixel0;
 
                             ul{
-                                display: flex;
+                                display: $df;
                                 margin-top: 70px;
-                                list-style: none;
-                                text-decoration: none;
-                                padding-left: 0px;
+                                list-style: $styleNo;
+                                text-decoration: $styleNo;
+                                padding-left: $pixel0;
                             }
                                 li{
                                     padding-bottom: 10px;
@@ -922,8 +973,8 @@
                                             font-size: 15px;
                                             text-transform: uppercase;
                                             padding: 1.5rem;
-                                            color: #ffffff;
-                                            text-decoration: none;
+                                            color: $colorWhite;
+                                            text-decoration: $styleNo;
                                             
                                                 i{
                                                 color:#b6912199;   
@@ -934,23 +985,69 @@
                     }
         
                     #social{
-                        display: flex;
+                        display: $df;
                         flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        align-content: center;
+                        justify-content: $ai;
+                        align-items: $ai;
+                        align-content: $ai;
                         align-self: 1 1 auto;
-                        margin-top: 0;
+                        margin-top: $pixel0;
                         padding: 40px 15px 0 15px;
         
                             a{   
-                                padding: 1rem;
+                                width: 44px;
+                                height: 50px;
+                                margin-left: 15px;
+                                color:#b6912199;
+                                backdrop-filter: blur(15px);
+                                transition: color .4s;
+
+                                &:hover{
+                                    color: rgba(255, 255, 255);
+                                }
+            
+                                &::before,
+                                &::after{
+                                    content: '';
+                                    position: $positionAb;
+                                    top: -5px;
+                                    left: -5px;
+                                    background: #545453f5;
+                                    z-index: -1;
+                                    transition: clip-path 0.4s;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+            
+                                &::after{
+                                    top: 5px;
+                                    left: 5px;
+                                    background: #545453f5;
+                                }
+            
+                                &::before{
+                                    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                                }
+            
+                                &:hover::before{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 0 0 50px 0;
+                                }
+            
+                                &::after{
+                                    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                                }
+            
+                                &:hover::after{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 50px 0 0 0;
+                                }
                                 
-                                .icono{
-                                    color: #b6912199;
-                                    border-radius: 1rem;                                  
-                                    font-size: 5rem; 
-                                }     
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                     
                             }
                     }
@@ -958,14 +1055,14 @@
         }
     
         .copy{
-            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+            background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,$colorBlack);
             color: #6C757D;
             height: 50px;
             font-weight: 600;
             font-size: 1.5rem;
             padding-top: 0px;
-            text-align: center;
-            margin-top: 0px;
+            text-align: $ai;
+            margin-top: $pixel0;
     
         }   
     
@@ -979,20 +1076,20 @@
         width: 93%;
 
         .navbar{
-            display: flex;
+            display: $df;
             flex-direction: column;
             flex-wrap: nowrap;
 
                 .menu{
                     margin: 10px 0 20px 0;
-                    display: flex;
+                    display: $df;
                     flex-direction: column;
                     flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+                    justify-content: $ai;
+                    align-items: $ai;
+                    align-content: $ai;
                     flex: 1 1 auto;
-                    align-self: center;
+                    align-self: $ai;
                 }
 
             .btn {
@@ -1000,14 +1097,14 @@
                 padding: 5px 0px 5px 6px;
                 border: 1px;
                 margin: 0px 0px 0px 8px; 
-                display: flex;
+                display: $df;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
+                justify-content: $ai;
+                align-items: $ai;
+                align-content: $ai;
                 flex: 1 1 auto;
-                align-self: center;   
+                align-self: $ai;   
             } 
 
         }
@@ -1022,7 +1119,7 @@
             .row{
                 width: 100%;
                 max-width: 45rem;
-                margin: 0 auto;
+                margin: $pixel0 auto;
                 padding: 2.5rem 0;
             }
     
@@ -1031,40 +1128,40 @@
                 width: 100%;
                 height: 467px;
                 padding: 2rem 1rem 4.5rem 1rem;
-                margin-right: 0px;
+                margin-right: $pixel0;
                 top: 100px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
-                position: relative;
+                position: $positionRe;
     
                     &::after{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         background-color: skyblue;
-                        top: 0px;
-                        right: 0px;
+                        top: $pixel0;
+                        right: $pixel0;
                         border-bottom: 20px solid darken(#01bad9, 5%);
                         border-left: 20px solid darken(#01bad9, 5%);
                         border-right: 20px solid #00edfe32;
                         border-top: 20px solid #00edfe32;
-                        position: absolute;
+                        position: $positionAb;
                         filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
                     }  
     
                     &::before{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         border-top: 40px solid darken(#cf2bd0, 5%);
                         border-right: 40px solid darken(#cf2bd0, 5%);
                         border-left: 40px solid  #d02bd040;
                         border-bottom: 40px solid  #d02bd040;
-                        bottom: 0px;
-                        left: 0px;
-                        position: absolute;
+                        bottom: $pixel0;
+                        left: $pixel0;
+                        position: $positionAb;
                         filter: drop-shadow(5px -5px 5px rgba(0,0,0,0.5));
                         margin-right: 10%;
                     }
@@ -1074,9 +1171,9 @@
                     }
     
                     .line{
-                        position: relative;
-                        top: 0px;
-                        color: #DE9D37;
+                        position: $positionRe;
+                        top: $pixel0;
+                        color: $colorGolden2;
                         width: 16em;
                         margin: auto;
                         border-right: 2px solid rgba(255,255,255,0.75);
@@ -1094,7 +1191,7 @@
                         
                     @keyframes typewriter{
                         from{
-                            width: 0;
+                            width:$pixel0;
                         }
                         to{
                             width: 6.2em;
@@ -1125,26 +1222,26 @@
 
                 
                 .title2{
-                    color: #DE9D37;
-                    align-items: center;
+                    color: $colorGolden2;
                     font-size: 40px;
                     font-family: "sansBold";
-                    display: flex;
-                    justify-content: center;
-                    margin: 0px;
+                    display: $df;
+                    justify-content: $ai;
+                    align-items: $ai;
+                    margin: $pixel0;
                 }
 
                 .content-all{
                     width: 100px;
                     perspective: 5000px;
-                    position: relative;
+                    position: $positionRe;
                     margin: 0 0 750px 0;
                     padding: 100px 0 0 0;
-                    right: 0px;
+                    right: $pixel0;
 
                     .content-carrousel{
                         width: 100%;
-                        position: relative;
+                        position: $positionRe;
                         animation: rotar 10s infinite linear;
                         transform-style: preserve-3d;
                     
@@ -1157,7 +1254,7 @@
                             height: 310px;
                             width: 250px;
                             overflow: hidden;
-                            position: absolute;
+                            position: $positionAb;
 
                                 &:nth-child(1){ transform: rotateY(0deg)
                                     translateZ(300px)}
@@ -1195,17 +1292,17 @@
                 .accordion{
                     width: 210px;
                     height: 300px;
-                    position: relative;
+                    position: $positionRe;
                     top: 500px;
                     left: -45px;
-                    right: 0%;
+                    right: $pixel0;
                     bottom: 150px;
-                    padding: 0px;
+                    padding: $pixel0;
                     margin: 0 0 0 12px;
         
                     .accordion-body{
                         background: transparent;
-                        color: white;
+                        color: $colorWhite2;
                         border-radius: 10px;
                         margin-top: 8px;
                     }
@@ -1217,20 +1314,20 @@
         
                     .accordion-collapse{
                         background-color: transparent;
-                        color: #000000;
+                        color: $colorBlack;
                         border-radius: 10px;
                         
                     }
         
                     code{
                         font-weight: 500;
-                        color: #B69121;
+                        color: $colorGolden;
                     }
         
                     .accordion-button{
                         background-color:  #000000b1;
                         border-radius: 10px;
-                        color: #DE9D37;
+                        color: $colorGolden2;
                     }
         
                     .collapsed{
@@ -1248,8 +1345,8 @@
 
                 .content{
                     width: 330px ;
-                    margin: 0px;
-                    padding: 0px;
+                    margin: $pixel0;
+                    padding: $pixel0;
 
                     .contact-wrapper{
                         display: grid;
@@ -1262,7 +1359,7 @@
 
                         .contact-form{
                             background: #222222;
-                            margin: 0;
+                            margin:$pixel0;
                             padding: 0.5em;
                             width: 305px;
                             height: 340px;
@@ -1281,12 +1378,12 @@
                                     width: 300px;
 
                                     label{
-                                        color: #fff;
+                                        color: $colorWhite2;
                                         padding-top: 2px;
                                     }
 
                                     textarea{
-                                        padding:0px;
+                                        padding:$pixel0;
                                         height: 100px;
                                         width: 95%;
                                     }   
@@ -1294,21 +1391,21 @@
                                     .name{
                                         width: 95%;
                                         padding: 1px;
-                                        border: none;
-                                        background: none;
-                                        outline: 0;
-                                        color: #fff;
-                                        border-bottom: 1px solid #DE9D37;    
+                                        border: $styleNo;
+                                        background: $styleNo;
+                                        outline: $pixel0;
+                                        color: $colorWhite2;
+                                        border-bottom: 1px solid $colorGolden2;    
                                     }
 
                                     .mail{
                                         width: 95%;
                                         padding: 1px;
-                                        border: none;
-                                        background: none;
-                                        outline: 0;
-                                        color: #fff;
-                                        border-bottom: 1px solid #DE9D37;
+                                        border: $styleNo;
+                                        background: $styleNo;
+                                        outline: $pixel0;
+                                        color: $colorWhite2;
+                                        border-bottom: 1px solid $colorGolden2;
                                     }
 
                                     .boton-enviar{
@@ -1317,16 +1414,16 @@
                                         height: 41px;
                                         margin-top: 15px;
                                         background: #b69121a8;
-                                        color: #000;
-                                        border: 0;
+                                        color: $colorBlack;
+                                        border: $pixel0;
                                         text-transform: uppercase;
                                         padding: 0.5em;
                     
                                             &:hover, &:focus{
-                                                background: #B69121;
-                                                color: #fff;
+                                                background: $colorGolden;
+                                                color: $colorWhite2;
                                                 transition: background-color 1s ease-in-out ;
-                                                outline: 0;
+                                                outline: $pixel0;
                                             }
 
                                     }
@@ -1336,20 +1433,20 @@
                         }
 
                             .contact-info{
-                                background: #000;
+                                background: $colorBlack;
                                 margin: 0 0 45px 0;
                                 padding: 0 0 0 20px;
                                 height: 130px; 
                                 width: 290px;                   
                                     
                                     h4, ul, p{
-                                        text-align: center;
+                                        text-align: $ai;
                                         margin: 0 0 1rem 0;
                                     }
 
                                     ul{
                                         padding: 0.5em;
-                                        list-style: none;
+                                        list-style: $styleNo;
                                     }
 
                                     li{
@@ -1372,30 +1469,30 @@
         width: 340px;
     
             .menu-pie{
-                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#171717,$colorBlack);
                 height: 380px;
-                padding: 0px;
+                padding: $pixel0;
                 width: 343px;
-                margin: 0px;
+                margin: $pixel0;
     
                 .row{   
-                    margin: 0px;
+                    margin: $pixel0;
                     width: 340px;
                     height: 330px;
-                    padding-bottom: 0px;
+                    padding-bottom: $pixel0;
                 
                     .pie{
                         width: 340px;
-                        padding: 0px;
+                        padding: $pixel0;
 
                             ul{
-                                display: flex;
+                                display: $df;
                                 flex-direction: row;
                                 flex-wrap: wrap;
-                                justify-content: center;
+                                justify-content: $ai;
                                 margin-top: 70px;
-                                list-style: none;
-                                text-decoration: none;
+                                list-style: $styleNo;
+                                text-decoration: $styleNo;
                                 padding: 10px;
                             }
                                 li{
@@ -1405,8 +1502,8 @@
                                             font-size: 15px;
                                             text-transform: uppercase;
                                             padding: 1.5rem;
-                                            color: #ffffff;
-                                            text-decoration: none;
+                                            color: $colorWhite;
+                                            text-decoration: $styleNo;
                                             
                                                 i{
                                                 color:#b6912199;   
@@ -1417,23 +1514,70 @@
                     }
         
                     #social{
-                        display: flex;
+                        display: $df;
                         flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        align-content: center;
-                        margin-top: 0;
+                        justify-content: $ai;
+                        align-items: $ai;
+                        align-content: $ai;
+                        margin-top: $pixel0;
                         width: 340px;
                         padding-top: 40px;
         
                             a{   
-                                padding: 10px 20px;
+                                width: 44px;
+                                height: 50px;
+                                margin-left: 15px;
+                                color:#b6912199;
+                                backdrop-filter: blur(15px);
+                                transition: color .4s;
                                 
-                                .icono{
-                                    color: #b6912199;
-                                    border-radius: 1rem;                                  
-                                    font-size: 5rem; 
-                                }     
+
+                                &:hover{
+                                    color: rgba(255, 255, 255);
+                                }
+            
+                                &::before,
+                                &::after{
+                                    content: '';
+                                    position: $positionAb;
+                                    top: -5px;
+                                    left: -5px;
+                                    background: #545453f5;
+                                    z-index: -1;
+                                    transition: clip-path 0.4s;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+            
+                                &::after{
+                                    top: 5px;
+                                    left: 5px;
+                                    background: #545453f5;
+                                }
+            
+                                &::before{
+                                    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                                }
+            
+                                &:hover::before{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 0 0 50px 0;
+                                }
+            
+                                &::after{
+                                    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                                }
+            
+                                &:hover::after{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 50px 0 0 0;
+                                }
+                                
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                     
                             }
                     }
@@ -1441,14 +1585,14 @@
         }
     
         .copy{
-            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+            background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,$colorBlack);
             color: #6C757D;
             height: 50px;
             font-weight: 600;
             font-size: 1.5rem;
-            padding-top: 0px;
-            text-align: center;
-            margin-top: 0px;
+            padding-top: $pixel0;
+            text-align: $ai;
+            margin-top: $pixel0;
     
         }   
     
@@ -1462,20 +1606,20 @@
         width: 93%;
 
         .navbar{
-            display: flex;
+            display: $df;
             flex-direction: column;
             flex-wrap: nowrap;
 
                 .menu{
                     margin: 10px 0 20px 0;
-                    display: flex;
+                    display: $df;
                     flex-direction: column;
                     flex-wrap: nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+                    justify-content: $ai;
+                    align-items: $ai;
+                    align-content: $ai;
                     flex: 1 1 auto;
-                    align-self: center;
+                    align-self: $ai;
                 }
 
             .btn {
@@ -1483,14 +1627,14 @@
                 padding: 5px 0px 5px 6px;
                 border: 1px;
                 margin: 0px 0px 0px 8px; 
-                display: flex;
+                display: $df;
                 flex-direction: column;
                 flex-wrap: nowrap;
-                justify-content: center;
-                align-items: center;
-                align-content: center;
+                justify-content: $ai;
+                align-items: $ai;
+                align-content: $ai;
                 flex: 1 1 auto;
-                align-self: center;   
+                align-self: $ai;   
             } 
 
         }
@@ -1506,8 +1650,8 @@
                 width: 100%;
                 height: 585px;
                 max-width: 45rem;
-                margin: 0 auto;
-                padding: 0;
+                margin: $pixel0 auto;
+                padding: $pixel0;
             }
     
             .card{
@@ -1515,54 +1659,54 @@
                 width: 100%;
                 height: 547px;
                 padding: 2rem 1rem 4.5rem 1rem;
-                margin: 0;
+                margin: $pixel0;
                 top: 100px;
                 background: rgba(255, 255, 255, 0.279);
                 backdrop-filter: blur(5px);
-                position: relative;
+                position: $positionRe;
     
                     &::after{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         background-color: skyblue;
-                        top: 0px;
-                        right: 0px;
+                        top: $pixel0;
+                        right: $pixel0;
                         border-bottom: 20px solid darken(#01bad9, 5%);
                         border-left: 20px solid darken(#01bad9, 5%);
                         border-right: 20px solid #00edfe32;
                         border-top: 20px solid #00edfe32;
-                        position: absolute;
+                        position: $positionAb;
                         filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5));
                     }  
     
                     &::before{
                         content: "";
                         display: block;
-                        width: 0px;
-                        height: 0px;
+                        width: $pixel0;
+                        height: $pixel0;
                         border-top: 40px solid darken(#cf2bd0, 5%);
                         border-right: 40px solid darken(#cf2bd0, 5%);
                         border-left: 40px solid  #d02bd040;
                         border-bottom: 40px solid  #d02bd040;
-                        bottom: 0px;
-                        left: 0px;
-                        position: absolute;
+                        bottom: $pixel0;
+                        left: $pixel0;
+                        position: $positionAb;
                         filter: drop-shadow(5px -5px 5px rgba(0,0,0,0.5));
                         margin-right: 10%;
                     }
     
                     &:nth-of-type(1){
-                        margin-right: 0;
+                        margin-right: $pixel0;
                     }
     
                     .line{
-                        position: relative;
-                        top: 0px;
-                        color: #DE9D37;
+                        position: $positionRe;
+                        top: $pixel0;
+                        color: $colorGolden2;
                         width: 16em;
-                        margin-left: 0;
+                        margin-left: $pixel0;
                         border-right: 2px solid rgba(255,255,255,0.75);
                         font-size: 38px;
                         text-align: left;
@@ -1578,7 +1722,7 @@
                         
                     @keyframes typewriter{
                         from{
-                            width: 0;
+                            width: $pixel0;
                         }
                         to{
                             width: 6.2em;
@@ -1610,25 +1754,25 @@
                 .content-all{
                     width: 100px;
                     perspective: 5000px;
-                    position: relative;
+                    position: $positionRe;
                     margin: 0 0 750px 0;
                     padding: 100px 0 0 0;
-                    right: 0px;
+                    right: $pixel0;
         
                     .title2{
                         color: #DE9D37;
-                        align-items: center;
                         font-size: 40px;
                         font-family: "sansBold";
-                        display: flex;
-                        justify-content: center;
+                        display: $df;
+                        justify-content: $ai;
+                        align-items: $ai;
                         margin-top: 40px;
-                        margin-bottom: 0px;
+                        margin-bottom: $pixel0;
                     }
 
                     .content-carrousel{
                         width: 100%;
-                        position: relative;
+                        position: $positionRe;
                         animation: rotar 10s infinite linear;
                         transform-style: preserve-3d;
                     
@@ -1641,7 +1785,7 @@
                             height: 310px;
                             width: 250px;
                             overflow: hidden;
-                            position: absolute;
+                            position: $positionAb;
 
                                 &:nth-child(1){ transform: rotateY(0deg)
                                     translateZ(300px)}
@@ -1679,18 +1823,18 @@
                 .accordion{
                     width: 200px;
                     height: 280px;
-                    position: relative;
-                    padding-left: 0%;
-                    padding-right: 0%;
-                    margin-left: 0px;
+                    position: $positionRe;
+                    padding-left: $pixel0;
+                    padding-right: $pixel0;
+                    margin-left: $pixel0;
                     top: 500px;
                     left: -50px;
-                    right: 0%;
+                    right: $pixel0;
 
         
                     .accordion-body{
                         background: transparent;
-                        color: white;
+                        color: $colorWhite2;
                         border-radius: 10px;
                         margin-top: 8px;
                     }
@@ -1702,20 +1846,20 @@
         
                     .accordion-collapse{
                         background-color: transparent;
-                        color: #000000;
+                        color: $colorBlack;
                         border-radius: 10px;
                         
                     }
         
                     code{
                         font-weight: 500;
-                        color: #B69121;
+                        color: $colorGolden;
                     }
         
                     .accordion-button{
                         background-color:  #000000b1;
                         border-radius: 10px;
-                        color: #DE9D37;
+                        color: $colorGolden;
                     }
         
                     .collapsed{
@@ -1735,8 +1879,8 @@
 
                 .content{
                     width: 290px ;
-                    margin: 0px;
-                    padding: 0px;
+                    margin: $pixel0;
+                    padding: $pixel0;
 
                     .contact-wrapper{
                         display: grid;
@@ -1749,7 +1893,7 @@
 
                         .contact-form{
                             background: #222222;
-                            margin: 0;
+                            margin: $pixel0;
                             padding: 0.5em;
                             width: 260px;
                             height: 340px;
@@ -1768,33 +1912,33 @@
                                     width: 250px;
 
                                     label{
-                                        color: #fff;
+                                        color: $colorWhite2;
                                         padding-top: 2px;
                                     }
 
                                     textarea{
-                                        padding:0px;
+                                        padding:$pixel0;
                                         height: 100px;
                                     }   
 
                                     .name{
                                         width: 100%;
                                         padding: 1px;
-                                        border: none;
-                                        background: none;
-                                        outline: 0;
-                                        color: #fff;
-                                        border-bottom: 1px solid #DE9D37;    
+                                        border: $styleNo;
+                                        background: $styleNo;
+                                        outline: $pixel0;
+                                        color: $colorWhite2;
+                                        border-bottom: 1px solid $colorGolden2;    
                                     }
 
                                     .mail{
                                         width: 100%;
                                         padding: 1px;
-                                        border: none;
-                                        background: none;
-                                        outline: 0;
-                                        color: #fff;
-                                        border-bottom: 1px solid #DE9D37;
+                                        border: $styleNo;
+                                        background: $styleNo;
+                                        outline: $pixel0;
+                                        color: $colorWhite2;
+                                        border-bottom: 1px solid $colorGolden2;
                                     }
 
                                     .boton-enviar{
@@ -1802,16 +1946,16 @@
                                         height: 41px;
                                         margin-top: 15px;
                                         background: #b69121a8;
-                                        color: #000;
-                                        border: 0;
+                                        color: $colorBlack;
+                                        border: $pixel0;
                                         text-transform: uppercase;
                                         padding: 0.5em;
                     
                                             &:hover, &:focus{
-                                                background: #B69121;
-                                                color: #fff;
+                                                background: $colorGolden;
+                                                color: $colorWhite2;
                                                 transition: background-color 1s ease-in-out ;
-                                                outline: 0;
+                                                outline: $pixel0;
                                             }
 
                                     }
@@ -1821,20 +1965,20 @@
                         }
 
                             .contact-info{
-                                background: #000;
+                                background: $colorBlack;
                                 margin: 0 0 45px 0;
                                 padding: 0 0 0 20px;
                                 height: 130px; 
                                 width: 250px;                   
                                     
                                     h4, ul, p{
-                                        text-align: center;
+                                        text-align: $ai;
                                         margin: 0 0 1rem 0;
                                     }
 
                                     ul{
                                         padding: 0.5em;
-                                        list-style: none;
+                                        list-style: $styleNo;
                                     }
 
                                     li{
@@ -1857,36 +2001,36 @@
         width: 300px;
     
             .menu-pie{
-                background-image: linear-gradient(to right,#000000,#171717,#171717,#171717,#000000);
+                background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#171717,$colorBlack);
                 height: 380px;
-                padding: 0px;
+                padding: $pixel0;
                 width: 300px;
     
                 .row{   
-                    margin: 0px;
+                    margin: $pixel0;
                     width: 300px;
                     height: 330px;
-                    padding-bottom: 0px;
+                    padding-bottom: $pixel0;
                 
                     .pie{
                         width: 280px;
 
                             ul{
-                                display: flex;
+                                display: $df;
                                 margin-top: 20px;
                                 padding: 20px 0px 0px 0px;
-                                list-style: none;
-                                text-decoration: none;
+                                list-style: $styleNo;
+                                text-decoration: $styleNo;
                             }
                                 li{
-                                    display: flex;
+                                    display: $df;
 
                                         a{
                                             font-size: 15px;
                                             text-transform: uppercase;
                                             padding: 1.5rem;
-                                            color: #ffffff;
-                                            text-decoration: none;
+                                            color: $colorWhite;
+                                            text-decoration: $styleNo;
                                             
                                                 i{
                                                 color:#b6912199;   
@@ -1897,21 +2041,68 @@
                     }
         
                     #social{
-                        display: flex;
+                        display: $df;
                         flex-flow: row nowrap;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 0;
+                        justify-content: $ai;
+                        align-items: $ai;
+                        margin-top: $pixel0;
                         width: 320px;
         
                             a{   
-                                padding: 10px 20px;
+                                width: 44px;
+                                height: 50px;
+                                margin-left: 15px;
+                                color:#b6912199;
+                                backdrop-filter: blur(15px);
+                                transition: color .4s;
+
+                                &:hover{
+                                    color: rgba(255, 255, 255);
+                                }
+            
+                                &::before,
+                                &::after{
+                                    content: '';
+                                    position: $positionAb;
+                                    top: -5px;
+                                    left: -5px;
+                                    background: #545453f5;
+                                    z-index: -1;
+                                    transition: clip-path 0.4s;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+            
+                                &::after{
+                                    top: 5px;
+                                    left: 5px;
+                                    background: #545453f5;
+                                }
+            
+                                &::before{
+                                    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                                }
+            
+                                &:hover::before{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 0 0 50px 0;
+                                }
+            
+                                &::after{
+                                    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                                }
+            
+                                &:hover::after{
+                                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                    border-radius: 50px 0 0 0;
+                                }
                                 
-                                .icono{
-                                    color: #b6912199;
-                                    border-radius: 1rem;                                  
-                                    font-size: 5rem; 
-                                }     
+                                
+                                    .icono{
+                                        color: #b6912199;
+                                        border-radius: 1rem;                                  
+                                        font-size: 5rem; 
+                                    }     
                                     
                             }
                     }
@@ -1919,14 +2110,14 @@
         }
     
         .copy{
-            background-image: linear-gradient(to right,#000000,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,#000000);
+            background-image: linear-gradient(to right,$colorBlack,#171717,#171717,#b6912180,#b6912199,#b6912180,#171717,#171717,$colorBlack);
             color: #6C757D;
             height: 50px;
             font-weight: 600;
             font-size: 1.5rem;
-            padding-top: 0px;
-            text-align: center;
-            margin-top: 0px;
+            padding-top: $pixel0;
+            text-align: $ai;
+            margin-top: $pixel0;
     
         }   
     

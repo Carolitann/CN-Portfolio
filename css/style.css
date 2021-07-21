@@ -444,18 +444,22 @@ main #contacto .content .contact-wrapper .contact-info {
   margin: 35px 65px 35px 25px;
   padding: 15px;
 }
-main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+main #contacto .content .contact-wrapper .contact-info p {
   text-align: center;
   margin: 0 0 1rem 0;
-  color: #474c51;
+  color: #3b444e;
 }
 main #contacto .content .contact-wrapper .contact-info h4 {
   font-size: 1.5em;
   text-align: center;
   margin-left: 12px;
+  color: #3b444e;
 }
 main #contacto .content .contact-wrapper .contact-info ul {
+  color: #3b444e;
+  margin: 0 0 1rem 0;
   padding: 0.25rem;
+  text-align: center;
   list-style: none;
 }
 main #contacto .content .contact-wrapper .contact-info li {
@@ -608,7 +612,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #presentacion .row {
     width: 100%;
     max-width: 45rem;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 2.5rem 0;
   }
   main #presentacion .card {
@@ -672,7 +676,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   @keyframes typewriter {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 6.5em;
@@ -698,11 +702,11 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .title2 {
     color: #DE9D37;
-    align-items: center;
     font-size: 40px;
     font-family: "sansBold";
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-bottom: 40px;
   }
@@ -770,7 +774,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-body {
     background: transparent;
-    color: white;
+    color: #fff;
     border-radius: 10px;
     margin-top: 8px;
   }
@@ -780,7 +784,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-collapse {
     background-color: transparent;
-    color: #000000;
+    color: black;
     border-radius: 10px;
   }
   main #porfolio .accordion code {
@@ -814,14 +818,14 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 10px 0px;
     height: 440px;
     width: 700px;
-    margin: 0 0 10px 15px;
+    margin: 0 0 10px 25px;
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
     margin: 25px 0px 0px 10px;
     padding: 12px;
-    height: 370px;
-    width: 324px;
+    height: 364px;
+    width: 300px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -843,7 +847,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 80px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -852,7 +856,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 30px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -861,7 +865,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 30px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -872,8 +876,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     margin: 30px 0 10px 0;
     padding: 5px;
     background: #b69121a8;
-    color: #000;
-    border: 0;
+    color: black;
+    border: 0px;
     text-transform: uppercase;
     padding: 0.5em;
     font-size: 16px;
@@ -882,15 +886,15 @@ main #contacto .content .contact-wrapper .contact-info i {
     background: #B69121;
     color: #fff;
     transition: background-color 1s ease-in-out;
-    outline: 0;
+    outline: 0px;
   }
   main #contacto .content .contact-wrapper .contact-info {
-    background: #000;
+    background: black;
     width: 350px;
-    margin: 35px 40px 35px 0;
+    margin: 35px 8px 35px 0;
     padding: 10px 0 0 0;
   }
-  main #contacto .content .contact-wrapper .contact-info h4, main #contacto .content .contact-wrapper .contact-info ul, main #contacto .content .contact-wrapper .contact-info p {
+  main #contacto .content .contact-wrapper .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
     color: #474c51;
@@ -899,11 +903,15 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 1.5em;
     text-align: center;
     margin-left: 12px;
+    color: #474c51;
   }
   main #contacto .content .contact-wrapper .contact-info ul {
-    padding: 0;
+    padding: 0px;
+    text-align: center;
+    margin: 0 0 1rem 0;
     width: 350px;
     list-style: none;
+    color: #474c51;
   }
   main #contacto .content .contact-wrapper .contact-info li {
     color: #474c51;
@@ -925,7 +933,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     margin-top: 50px;
   }
   #footer .menu-pie {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #171717, black);
     height: 60vh;
   }
   #footer .menu-pie .row {
@@ -937,7 +945,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   #footer .menu-pie .row .pie ul {
     display: flex;
     flex-flow: row wrap;
-    margin: 150px 0px 10px 0px;
+    margin: 200px 0px 10px 0px;
     padding: 0px;
     list-style: none;
     text-decoration: none;
@@ -953,15 +961,54 @@ main #contacto .content .contact-wrapper .contact-info i {
     color: #b6912199;
   }
   #footer .menu-pie .row #social {
-    flex: auto;
+    height: 60px;
     display: flex;
+    flex: auto;
     flex-flow: row wrap;
     justify-content: center;
-    margin-top: 130px;
+    margin-top: 180px;
     padding: 0px;
   }
   #footer .menu-pie .row #social a {
-    padding: 1rem;
+    width: 44px;
+    height: 50px;
+    margin-left: 15px;
+    color: #b6912199;
+    backdrop-filter: blur(15px);
+    transition: color 0.4s;
+  }
+  #footer .menu-pie .row #social a:hover {
+    color: white;
+  }
+  #footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #545453f5;
+    z-index: -1;
+    transition: clip-path 0.4s;
+    width: 100%;
+    height: 100%;
+  }
+  #footer .menu-pie .row #social a::after {
+    top: 5px;
+    left: 5px;
+    background: #545453f5;
+  }
+  #footer .menu-pie .row #social a::before {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  #footer .menu-pie .row #social a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 50px 0;
+  }
+  #footer .menu-pie .row #social a::after {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+  #footer .menu-pie .row #social a:hover::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 50px 0 0 0;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;
@@ -969,7 +1016,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 5rem;
   }
   #footer .menu-pie .copy {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, black);
     color: #6C757D;
     height: 50px;
     font-weight: 600;
@@ -1027,7 +1074,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #presentacion .row {
     width: 100%;
     max-width: 45rem;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 2.5rem 0;
   }
   main #presentacion .card {
@@ -1092,7 +1139,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   @keyframes typewriter {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 6.5em;
@@ -1118,11 +1165,11 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .title2 {
     color: #DE9D37;
-    align-items: center;
     font-size: 40px;
     font-family: "sansBold";
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-bottom: 40px;
   }
@@ -1193,7 +1240,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-body {
     background: transparent;
-    color: white;
+    color: #fff;
     border-radius: 10px;
     margin-top: 8px;
   }
@@ -1203,7 +1250,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-collapse {
     background-color: transparent;
-    color: #000000;
+    color: black;
     border-radius: 10px;
     font-size: 13px;
   }
@@ -1248,7 +1295,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
-    margin: 0;
+    margin: 0px;
     padding: 0.5em;
     width: 340px;
     height: 330px;
@@ -1273,7 +1320,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -1282,7 +1329,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -1291,8 +1338,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 46px;
     margin-top: 10px;
     background: #b69121a8;
-    color: #000;
-    border: 0;
+    color: black;
+    border: 0px;
     text-transform: uppercase;
     padding: 0.5em;
   }
@@ -1300,10 +1347,10 @@ main #contacto .content .contact-wrapper .contact-info i {
     background: #B69121;
     color: #fff;
     transition: background-color 1s ease-in-out;
-    outline: 0;
+    outline: 0px;
   }
   main #contacto .content .contact-wrapper .contact-info {
-    background: #000;
+    background: black;
     width: 350px;
     margin: 5px 0px 0px 0px;
     padding: 0px;
@@ -1329,7 +1376,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 380px;
   }
   #footer .menu-pie {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #171717, black);
     height: 380px;
     padding: 0px;
     width: 380px;
@@ -1374,11 +1421,49 @@ main #contacto .content .contact-wrapper .contact-info i {
     align-items: center;
     align-content: center;
     align-self: 1 1 auto;
-    margin-top: 0;
+    margin-top: 0px;
     padding: 40px 15px 0 15px;
   }
   #footer .menu-pie .row #social a {
-    padding: 1rem;
+    width: 44px;
+    height: 50px;
+    margin-left: 15px;
+    color: #b6912199;
+    backdrop-filter: blur(15px);
+    transition: color 0.4s;
+  }
+  #footer .menu-pie .row #social a:hover {
+    color: white;
+  }
+  #footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #545453f5;
+    z-index: -1;
+    transition: clip-path 0.4s;
+    width: 100%;
+    height: 100%;
+  }
+  #footer .menu-pie .row #social a::after {
+    top: 5px;
+    left: 5px;
+    background: #545453f5;
+  }
+  #footer .menu-pie .row #social a::before {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  #footer .menu-pie .row #social a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 50px 0;
+  }
+  #footer .menu-pie .row #social a::after {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+  #footer .menu-pie .row #social a:hover::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 50px 0 0 0;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;
@@ -1386,7 +1471,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 5rem;
   }
   #footer .copy {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, black);
     color: #6C757D;
     height: 50px;
     font-weight: 600;
@@ -1444,7 +1529,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #presentacion .row {
     width: 100%;
     max-width: 45rem;
-    margin: 0 auto;
+    margin: 0px auto;
     padding: 2.5rem 0;
   }
   main #presentacion .card {
@@ -1509,7 +1594,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   @keyframes typewriter {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 6.2em;
@@ -1535,11 +1620,11 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .title2 {
     color: #DE9D37;
-    align-items: center;
     font-size: 40px;
     font-family: "sansBold";
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0px;
   }
   main #porfolio .content-all {
@@ -1598,14 +1683,14 @@ main #contacto .content .contact-wrapper .contact-info i {
     position: relative;
     top: 500px;
     left: -45px;
-    right: 0%;
+    right: 0px;
     bottom: 150px;
     padding: 0px;
     margin: 0 0 0 12px;
   }
   main #porfolio .accordion .accordion-body {
     background: transparent;
-    color: white;
+    color: #fff;
     border-radius: 10px;
     margin-top: 8px;
   }
@@ -1615,7 +1700,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-collapse {
     background-color: transparent;
-    color: #000000;
+    color: black;
     border-radius: 10px;
   }
   main #porfolio .accordion code {
@@ -1651,7 +1736,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
-    margin: 0;
+    margin: 0px;
     padding: 0.5em;
     width: 305px;
     height: 340px;
@@ -1681,7 +1766,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -1690,7 +1775,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -1700,8 +1785,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 41px;
     margin-top: 15px;
     background: #b69121a8;
-    color: #000;
-    border: 0;
+    color: black;
+    border: 0px;
     text-transform: uppercase;
     padding: 0.5em;
   }
@@ -1709,10 +1794,10 @@ main #contacto .content .contact-wrapper .contact-info i {
     background: #B69121;
     color: #fff;
     transition: background-color 1s ease-in-out;
-    outline: 0;
+    outline: 0px;
   }
   main #contacto .content .contact-wrapper .contact-info {
-    background: #000;
+    background: black;
     margin: 0 0 45px 0;
     padding: 0 0 0 20px;
     height: 130px;
@@ -1739,7 +1824,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 340px;
   }
   #footer .menu-pie {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #171717, black);
     height: 380px;
     padding: 0px;
     width: 343px;
@@ -1785,12 +1870,50 @@ main #contacto .content .contact-wrapper .contact-info i {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 0;
+    margin-top: 0px;
     width: 340px;
     padding-top: 40px;
   }
   #footer .menu-pie .row #social a {
-    padding: 10px 20px;
+    width: 44px;
+    height: 50px;
+    margin-left: 15px;
+    color: #b6912199;
+    backdrop-filter: blur(15px);
+    transition: color 0.4s;
+  }
+  #footer .menu-pie .row #social a:hover {
+    color: white;
+  }
+  #footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #545453f5;
+    z-index: -1;
+    transition: clip-path 0.4s;
+    width: 100%;
+    height: 100%;
+  }
+  #footer .menu-pie .row #social a::after {
+    top: 5px;
+    left: 5px;
+    background: #545453f5;
+  }
+  #footer .menu-pie .row #social a::before {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  #footer .menu-pie .row #social a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 50px 0;
+  }
+  #footer .menu-pie .row #social a::after {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+  #footer .menu-pie .row #social a:hover::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 50px 0 0 0;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;
@@ -1798,7 +1921,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 5rem;
   }
   #footer .copy {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, black);
     color: #6C757D;
     height: 50px;
     font-weight: 600;
@@ -1857,15 +1980,15 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 100%;
     height: 585px;
     max-width: 45rem;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0px auto;
+    padding: 0px;
   }
   main #presentacion .card {
     display: inline-block;
     width: 100%;
     height: 547px;
     padding: 2rem 1rem 4.5rem 1rem;
-    margin: 0;
+    margin: 0px;
     top: 100px;
     background: rgba(255, 255, 255, 0.279);
     backdrop-filter: blur(5px);
@@ -1902,14 +2025,14 @@ main #contacto .content .contact-wrapper .contact-info i {
     margin-right: 10%;
   }
   main #presentacion .card:nth-of-type(1) {
-    margin-right: 0;
+    margin-right: 0px;
   }
   main #presentacion .card .line {
     position: relative;
     top: 0px;
     color: #DE9D37;
     width: 16em;
-    margin-left: 0;
+    margin-left: 0px;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 38px;
     text-align: left;
@@ -1922,7 +2045,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   @keyframes typewriter {
     from {
-      width: 0;
+      width: 0px;
     }
     to {
       width: 6.2em;
@@ -1956,11 +2079,11 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .content-all .title2 {
     color: #DE9D37;
-    align-items: center;
     font-size: 40px;
     font-family: "sansBold";
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
     margin-bottom: 0px;
   }
@@ -2010,16 +2133,16 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 200px;
     height: 280px;
     position: relative;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-left: 0px;
     top: 500px;
     left: -50px;
-    right: 0%;
+    right: 0px;
   }
   main #porfolio .accordion .accordion-body {
     background: transparent;
-    color: white;
+    color: #fff;
     border-radius: 10px;
     margin-top: 8px;
   }
@@ -2029,7 +2152,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #porfolio .accordion .accordion-collapse {
     background-color: transparent;
-    color: #000000;
+    color: black;
     border-radius: 10px;
   }
   main #porfolio .accordion code {
@@ -2039,7 +2162,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   main #porfolio .accordion .accordion-button {
     background-color: #000000b1;
     border-radius: 10px;
-    color: #DE9D37;
+    color: #B69121;
   }
   main #porfolio .accordion .collapsed {
     color: #01bad9;
@@ -2067,7 +2190,7 @@ main #contacto .content .contact-wrapper .contact-info i {
   }
   main #contacto .content .contact-wrapper .contact-form {
     background: #222222;
-    margin: 0;
+    margin: 0px;
     padding: 0.5em;
     width: 260px;
     height: 340px;
@@ -2097,7 +2220,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -2106,7 +2229,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     padding: 1px;
     border: none;
     background: none;
-    outline: 0;
+    outline: 0px;
     color: #fff;
     border-bottom: 1px solid #DE9D37;
   }
@@ -2115,8 +2238,8 @@ main #contacto .content .contact-wrapper .contact-info i {
     height: 41px;
     margin-top: 15px;
     background: #b69121a8;
-    color: #000;
-    border: 0;
+    color: black;
+    border: 0px;
     text-transform: uppercase;
     padding: 0.5em;
   }
@@ -2124,10 +2247,10 @@ main #contacto .content .contact-wrapper .contact-info i {
     background: #B69121;
     color: #fff;
     transition: background-color 1s ease-in-out;
-    outline: 0;
+    outline: 0px;
   }
   main #contacto .content .contact-wrapper .contact-info {
-    background: #000;
+    background: black;
     margin: 0 0 45px 0;
     padding: 0 0 0 20px;
     height: 130px;
@@ -2154,7 +2277,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     width: 300px;
   }
   #footer .menu-pie {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #171717, black);
     height: 380px;
     padding: 0px;
     width: 300px;
@@ -2194,11 +2317,49 @@ main #contacto .content .contact-wrapper .contact-info i {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
+    margin-top: 0px;
     width: 320px;
   }
   #footer .menu-pie .row #social a {
-    padding: 10px 20px;
+    width: 44px;
+    height: 50px;
+    margin-left: 15px;
+    color: #b6912199;
+    backdrop-filter: blur(15px);
+    transition: color 0.4s;
+  }
+  #footer .menu-pie .row #social a:hover {
+    color: white;
+  }
+  #footer .menu-pie .row #social a::before, #footer .menu-pie .row #social a::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background: #545453f5;
+    z-index: -1;
+    transition: clip-path 0.4s;
+    width: 100%;
+    height: 100%;
+  }
+  #footer .menu-pie .row #social a::after {
+    top: 5px;
+    left: 5px;
+    background: #545453f5;
+  }
+  #footer .menu-pie .row #social a::before {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+  #footer .menu-pie .row #social a:hover::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 0 0 50px 0;
+  }
+  #footer .menu-pie .row #social a::after {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  }
+  #footer .menu-pie .row #social a:hover::after {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 50px 0 0 0;
   }
   #footer .menu-pie .row #social a .icono {
     color: #b6912199;
@@ -2206,7 +2367,7 @@ main #contacto .content .contact-wrapper .contact-info i {
     font-size: 5rem;
   }
   #footer .copy {
-    background-image: linear-gradient(to right, #000000, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, #000000);
+    background-image: linear-gradient(to right, black, #171717, #171717, #b6912180, #b6912199, #b6912180, #171717, #171717, black);
     color: #6C757D;
     height: 50px;
     font-weight: 600;

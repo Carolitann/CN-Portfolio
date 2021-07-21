@@ -341,20 +341,24 @@ main{
                                 margin: 35px 65px 35px 25px;
                                 padding: 15px;
     
-                                    h4, ul, p{
+                                    p{
                                         text-align: $ai;
                                         margin: 0 0 1rem 0;
-                                        color: #474c51
+                                        color: #3b444e;
                                     }
     
                                     h4{
                                         font-size: 1.5em;
                                         text-align: $ai;
                                         margin-left: 12px;
+                                        color: #3b444e;
                                     }
     
                                     ul{
+                                        color: #3b444e;
+                                        margin: 0 0 1rem 0;
                                         padding: 0.25rem;
+                                        text-align: $ai;
                                         list-style: $styleNo;
                                     }
     
