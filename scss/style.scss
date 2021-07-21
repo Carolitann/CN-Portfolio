@@ -588,10 +588,14 @@ main{
                                         color: #ffffff;
                                         text-decoration: none;
                                         
-                                            i{
-                                            color:#b6912199;   
-                                            padding-right: 8px; 
+                                            &:hover{
+                                                color: #ffffff; 
+                                                font-weight: 200;
                                             }
+                                                i{
+                                                color:#b6912199;   
+                                                padding-right: 8px; 
+                                                }
                                     }
                             }
                 }

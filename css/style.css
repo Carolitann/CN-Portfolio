@@ -497,6 +497,10 @@ main #contacto .content .contact-wrapper .contact-info i {
   color: #ffffff;
   text-decoration: none;
 }
+#footer .menu-pie .row .pie li a:hover {
+  color: #ffffff;
+  font-weight: 200;
+}
 #footer .menu-pie .row .pie li a i {
   color: #b6912199;
   padding-right: 8px;
